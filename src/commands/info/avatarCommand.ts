@@ -13,7 +13,7 @@ export default class AvatarCommand extends Command {
           "avatar",
           "avatar @user#0001",
           "avatar user -size=32",
-          "avatar 531953738491887627",
+          "avatar 531953738491887627 -size=128",
         ],
       },
       ratelimit: 3,
@@ -47,7 +47,6 @@ export default class AvatarCommand extends Command {
     message: Message,
     { member, size }: { member: GuildMember; size: number }
   ): Promise<Message> {
-    console.log(member);
     return message.util.send(
       new MessageEmbed()
         .setTitle(`Avatar ${member.user.tag}`)
