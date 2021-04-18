@@ -237,7 +237,7 @@
         "affectsGlobalScope": false
       },
       "../src/client/botclient.ts": {
-        "version": "39ae57f59b83b16973516296ff7874285dad2b57229634b7b2a88dc7eac1367c",
+        "version": "2357ac50a0bdfef3fd1cdf2f32dee255ad3ab699345e39c21289ef6d268fc0c2",
         "signature": "16219ff27f84b3677e7882f46011c848d9f4fbaee42085ee60031a1b5251b9db",
         "affectsGlobalScope": false
       },
@@ -252,13 +252,23 @@
         "affectsGlobalScope": false
       },
       "../src/commands/information/avatarcommand.ts": {
-        "version": "196a79bb86e79f57d49bf3a48f3f30bb4e821c9bf70bb0a21ac33ed7034cb2a9",
+        "version": "2be8ee408c845a1255e59d3f3cc292acaf562b22af19ffe162c7ad4b632f2c44",
         "signature": "56c5ece37261e8aed386745162a06d753b37432260e02d05f72f38e69603b7dd",
         "affectsGlobalScope": false
       },
       "../src/commands/information/pingcommand.ts": {
-        "version": "884f2fdfe253ba3de866539c52f99096dfd61077b113a4b006ed108d74898fb3",
+        "version": "c26a777f49dcfe6f7ec8c9be30dd45f64b99d689b8e14cce59176bfc6c0ff564",
         "signature": "16644a0d23cf8e57d463a6419150b2f0162c637159666d8dea733d350a63abdd",
+        "affectsGlobalScope": false
+      },
+      "../src/commands/moderation/bancommand.ts": {
+        "version": "6f288ac4499e4b30d2f8d6540418cb8e1969f76431dcde45c03111e430d6b254",
+        "signature": "e15fe32e3d477fb14fd863a4d0c53dc1614f1d4260da1782b905c90505eb51d1",
+        "affectsGlobalScope": false
+      },
+      "../src/commands/trivia/8ballcommand.ts": {
+        "version": "d04f896f2250baa2266bb767556f6bd82fb5ee82a313c728be63f097ed265179",
+        "signature": "9bcb03d40cc829a06b4e197feac035115a8e23bb55fcc7452ee18722f377bd3e",
         "affectsGlobalScope": false
       },
       "../src/listeners/client/readylister.ts": {
@@ -778,6 +788,14 @@
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
+      "../src/commands/moderation/bancommand.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
+      "../src/commands/trivia/8ballcommand.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
       "../src/listeners/client/readylister.ts": [
         "../node_modules/discord-akairo/src/index.d.ts"
       ]
@@ -1034,6 +1052,13 @@
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
+      "../src/commands/moderation/bancommand.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts"
+      ],
+      "../src/commands/trivia/8ballcommand.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
       "../src/listeners/client/readylister.ts": [
         "../node_modules/discord-akairo/src/index.d.ts"
       ]
@@ -1135,6 +1160,8 @@
       "../src/client/botclient.ts",
       "../src/commands/information/avatarcommand.ts",
       "../src/commands/information/pingcommand.ts",
+      "../src/commands/moderation/bancommand.ts",
+      "../src/commands/trivia/8ballcommand.ts",
       "../src/config.ts",
       "../src/db.ts",
       "../src/listeners/client/readylister.ts"

@@ -32,8 +32,9 @@ CREATE TABLE users(
     userID BIGINT PRIMARY KEY,
     cash BIGINT NOT NULL,
     bank BIGINT NOT NULL,
+    lastWorkCommand DATE
 );
 
 CREATE TABLE inventory(
     userID BIGINT PRIMARY KEY
-)
+);

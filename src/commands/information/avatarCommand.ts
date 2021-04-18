@@ -2,7 +2,7 @@ import { Command } from "discord-akairo";
 import { Message, GuildMember, MessageEmbed, ImageSize } from "discord.js";
 
 export default class AvatarCommand extends Command {
-  public constructor() {
+  constructor() {
     super("avatar", {
       aliases: ["avatar", "av"],
       category: "information",

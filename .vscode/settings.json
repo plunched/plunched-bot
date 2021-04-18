@@ -29,5 +29,17 @@
         "bot",
         "client",
         "ratelimit"
+    ],
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "plunched",
+            "database": "plunched_bot",
+            "username": "postgres",
+            "password": "pizzaoven"
+        }
     ]
 }
