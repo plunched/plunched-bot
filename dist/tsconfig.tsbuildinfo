@@ -256,6 +256,11 @@
         "signature": "56c5ece37261e8aed386745162a06d753b37432260e02d05f72f38e69603b7dd",
         "affectsGlobalScope": false
       },
+      "../src/commands/information/botinfo.ts": {
+        "version": "e76fea8f0c23a76836bc6068f95cef4c3e57ff018a2e1049228fd5e6cf3d69cd",
+        "signature": "da834ce79766b09cfe41be55a79f05e080818af5495fd94c5933894edd2f2dd9",
+        "affectsGlobalScope": false
+      },
       "../src/commands/information/pingcommand.ts": {
         "version": "c26a777f49dcfe6f7ec8c9be30dd45f64b99d689b8e14cce59176bfc6c0ff564",
         "signature": "16644a0d23cf8e57d463a6419150b2f0162c637159666d8dea733d350a63abdd",
@@ -277,7 +282,7 @@
         "affectsGlobalScope": false
       },
       "../src/listeners/commandlistener/cooldownlistener.ts": {
-        "version": "6ad1df4e35e3d8519c2e194e8e7184b41d7f5a073a571499b54f97a6fbd66876",
+        "version": "098e597b4cd203643740382fa8e3b9b69f556cce201efae9168da328e477ab7a",
         "signature": "84bac23b6deced06089546bc2755d955fe013b106d0d501699aa3f713e887692",
         "affectsGlobalScope": false
       },
@@ -789,6 +794,10 @@
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
+      "../src/commands/information/botinfo.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
       "../src/commands/information/pingcommand.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
@@ -1057,6 +1066,10 @@
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
+      "../src/commands/information/botinfo.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
       "../src/commands/information/pingcommand.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
@@ -1173,6 +1186,7 @@
       "../src/bot.ts",
       "../src/client/botclient.ts",
       "../src/commands/information/avatarcommand.ts",
+      "../src/commands/information/botinfo.ts",
       "../src/commands/information/pingcommand.ts",
       "../src/commands/moderation/bancommand.ts",
       "../src/commands/trivia/8ballcommand.ts",

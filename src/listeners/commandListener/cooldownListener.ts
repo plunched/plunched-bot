@@ -1,6 +1,6 @@
 import { Listener, Command } from "discord-akairo";
 import { Message, MessageEmbed } from "discord.js";
-import { ms } from "ms";
+const ms = require("ms");
 
 export default class cooldownListener extends Listener {
   constructor() {
