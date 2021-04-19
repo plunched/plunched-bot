@@ -27,6 +27,7 @@ export default class BotClient extends AkairoClient {
     allowMention: true,
     handleEdits: true,
     commandUtil: true,
+    blockBots: true,
     commandUtilLifetime: 3e5,
     defaultCooldown: 6e4,
     argumentDefaults: {

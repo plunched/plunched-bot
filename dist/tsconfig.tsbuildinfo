@@ -216,6 +216,11 @@
         "signature": "1e61418f41d404e744b6536af9f8c6f6674dd4d54c12335cd0c4f7eded69cf3f",
         "affectsGlobalScope": true
       },
+      "../src/config.ts": {
+        "version": "0579545dad7fa52ade815cb322d79cdd18d048229afa74dd81378e3fb8ea9481",
+        "signature": "bc6ae34b9b31cbef23c7489196e04c32671bc91d26b5bc5cce351e4712d17029",
+        "affectsGlobalScope": false
+      },
       "../node_modules/@discordjs/collection/dist/index.d.ts": {
         "version": "7be7f76b784383fa84812ca7eb8ad10315c9d482c0d25f178645365405509d44",
         "signature": "7be7f76b784383fa84812ca7eb8ad10315c9d482c0d25f178645365405509d44",
@@ -226,44 +231,59 @@
         "signature": "181d75cac13447a6688c948ed574d9ed28354890db49c61ba0ea7138181bb178",
         "affectsGlobalScope": true
       },
-      "../src/config.ts": {
-        "version": "883be408f765de15ca9da48f3860b55d75c4ed368b4c562cc07f98d6f930bd26",
-        "signature": "07970e5ef0bd2c1cf51de8d98951612a4e4d0ba5a38c3f8c465b64463863b1f5",
-        "affectsGlobalScope": false
-      },
       "../node_modules/discord-akairo/src/index.d.ts": {
         "version": "cb2a7eac053556da539ac76159bbafbeb72b5a7c61a5f3d510ba16ffe27e0333",
         "signature": "cb2a7eac053556da539ac76159bbafbeb72b5a7c61a5f3d510ba16ffe27e0333",
         "affectsGlobalScope": false
       },
       "../src/client/botclient.ts": {
-        "version": "39ae57f59b83b16973516296ff7874285dad2b57229634b7b2a88dc7eac1367c",
+        "version": "2357ac50a0bdfef3fd1cdf2f32dee255ad3ab699345e39c21289ef6d268fc0c2",
         "signature": "16219ff27f84b3677e7882f46011c848d9f4fbaee42085ee60031a1b5251b9db",
         "affectsGlobalScope": false
       },
+      "../src/db.ts": {
+        "version": "6e9957caf24055b8b34a6ba7ff8ccb3972258f65f0e64658aee8fc045ea0ad11",
+        "signature": "83141ad9c1ca73e0d10894b9cba5b88691b1958e5330a5a68ed696634cfc731c",
+        "affectsGlobalScope": false
+      },
       "../src/bot.ts": {
-        "version": "4bf0e01ee1fa2ec33391792bf05b2c5882831f6ebedd2900d1ff91c16eb9ba13",
+        "version": "ea2af22c66cafb7477808950a5d93aecf1daefc3ec2515c0eb294bb101295836",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
         "affectsGlobalScope": false
       },
-      "../src/db.ts": {
-        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "affectsGlobalScope": false
-      },
-      "../src/commands/info/avatarcommand.ts": {
-        "version": "c2559be95860b194d10b470a245b3e5245c695af1b706a0c80889e7eae3640f5",
+      "../src/commands/information/avatarcommand.ts": {
+        "version": "2be8ee408c845a1255e59d3f3cc292acaf562b22af19ffe162c7ad4b632f2c44",
         "signature": "56c5ece37261e8aed386745162a06d753b37432260e02d05f72f38e69603b7dd",
         "affectsGlobalScope": false
       },
-      "../src/commands/info/pingcommand.ts": {
-        "version": "0ce2a9c873f0b84238b555bb835d9119ef4fc77a91e3835c641179640d43b2ca",
+      "../src/commands/information/botinfo.ts": {
+        "version": "7127d1bbabd6bdf2f6ecf45db6f09f0617f1639f0977bf75ac66c3b2d754c66a",
+        "signature": "da834ce79766b09cfe41be55a79f05e080818af5495fd94c5933894edd2f2dd9",
+        "affectsGlobalScope": false
+      },
+      "../src/commands/information/pingcommand.ts": {
+        "version": "c26a777f49dcfe6f7ec8c9be30dd45f64b99d689b8e14cce59176bfc6c0ff564",
         "signature": "16644a0d23cf8e57d463a6419150b2f0162c637159666d8dea733d350a63abdd",
         "affectsGlobalScope": false
       },
+      "../src/commands/moderation/bancommand.ts": {
+        "version": "ee0ff2efe1460fb5b6640562a2ff76e97512ebf132228a130a7d4e50cd3972dc",
+        "signature": "ec71b0878beccb509b668cccdc117efba5e06ae1032429140bb6dd4d163f1d17",
+        "affectsGlobalScope": false
+      },
+      "../src/commands/trivia/8ballcommand.ts": {
+        "version": "5abd785f12015c1ab6b665639456aaf0f73d4d912045234f14c425f6504e0316",
+        "signature": "9bcb03d40cc829a06b4e197feac035115a8e23bb55fcc7452ee18722f377bd3e",
+        "affectsGlobalScope": false
+      },
       "../src/listeners/client/readylister.ts": {
-        "version": "7c8720ca5dc4a3f6a08ad04dd26cee01ddf39dd5b4e41e914e69dd5988204fc7",
+        "version": "569d7b34ebdcbf1668a2e8353799805708cfebc444f9531a86cc0bef6aed5b83",
         "signature": "029c68368fe4e44c6450549ddb0f4bf94392ea68a9c6d5238e874abedc44a1ba",
+        "affectsGlobalScope": false
+      },
+      "../src/listeners/commandlistener/cooldownlistener.ts": {
+        "version": "098e597b4cd203643740382fa8e3b9b69f556cce201efae9168da328e477ab7a",
+        "signature": "84bac23b6deced06089546bc2755d955fe013b106d0d501699aa3f713e887692",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/node/globals.d.ts": {
@@ -761,7 +781,8 @@
       ],
       "../src/bot.ts": [
         "../src/client/botclient.ts",
-        "../src/config.ts"
+        "../src/config.ts",
+        "../src/db.ts"
       ],
       "../src/client/botclient.ts": [
         "../node_modules/@types/node/path.d.ts",
@@ -769,19 +790,32 @@
         "../node_modules/discord.js/typings/index.d.ts",
         "../src/config.ts"
       ],
-      "../src/commands/info/avatarcommand.ts": [
+      "../src/commands/information/avatarcommand.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
-      "../src/commands/info/pingcommand.ts": [
+      "../src/commands/information/botinfo.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
-      "../src/config.ts": [
+      "../src/commands/information/pingcommand.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
+      "../src/commands/moderation/bancommand.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
+      "../src/commands/trivia/8ballcommand.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
       "../src/listeners/client/readylister.ts": [
         "../node_modules/discord-akairo/src/index.d.ts"
+      ],
+      "../src/listeners/commandlistener/cooldownlistener.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
       ]
     },
     "exportedModulesMap": {
@@ -1028,16 +1062,32 @@
       "../src/client/botclient.ts": [
         "../node_modules/discord-akairo/src/index.d.ts"
       ],
-      "../src/commands/info/avatarcommand.ts": [
+      "../src/commands/information/avatarcommand.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
-      "../src/commands/info/pingcommand.ts": [
+      "../src/commands/information/botinfo.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
+      "../src/commands/information/pingcommand.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
+      "../src/commands/moderation/bancommand.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
+      "../src/commands/trivia/8ballcommand.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
       "../src/listeners/client/readylister.ts": [
         "../node_modules/discord-akairo/src/index.d.ts"
+      ],
+      "../src/listeners/commandlistener/cooldownlistener.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -1135,11 +1185,15 @@
       "../node_modules/discord.js/typings/index.d.ts",
       "../src/bot.ts",
       "../src/client/botclient.ts",
-      "../src/commands/info/avatarcommand.ts",
-      "../src/commands/info/pingcommand.ts",
+      "../src/commands/information/avatarcommand.ts",
+      "../src/commands/information/botinfo.ts",
+      "../src/commands/information/pingcommand.ts",
+      "../src/commands/moderation/bancommand.ts",
+      "../src/commands/trivia/8ballcommand.ts",
       "../src/config.ts",
       "../src/db.ts",
-      "../src/listeners/client/readylister.ts"
+      "../src/listeners/client/readylister.ts",
+      "../src/listeners/commandlistener/cooldownlistener.ts"
     ]
   },
   "version": "4.2.4"

@@ -2,10 +2,10 @@ import { Command } from "discord-akairo";
 import { Message } from "discord.js";
 
 export default class pingCommand extends Command {
-  public constructor() {
+  constructor() {
     super("pingCommand", {
       aliases: ["ping"],
-      category: "info",
+      category: "information",
       description: {
         content: "Check the latency of the bot",
         usage: "ping",
