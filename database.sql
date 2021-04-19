@@ -5,11 +5,11 @@ CREATE TABLE guilds(
     guildName VARCHAR(255) NOT NULL,
     prefixes VARCHAR(5) ARRAY[5] NOT NULL,
     mutedRole VARCHAR(21),
-    logChannel VARCHAR(21),
+    logChannel VARCHAR(21)
 );
 
 create TABLE disabledModules(
-    guildID BIGINT PRIMARY KEY,
+    guildID SERIAL PRIMARY KEY,
     disable_Trivia_Module BOOLEAN,
     disable_antiswearing BOOLEAN,
     disable_currency_Module BOOLEAN,

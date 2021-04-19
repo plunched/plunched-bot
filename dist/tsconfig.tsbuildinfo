@@ -262,18 +262,23 @@
         "affectsGlobalScope": false
       },
       "../src/commands/moderation/bancommand.ts": {
-        "version": "6f288ac4499e4b30d2f8d6540418cb8e1969f76431dcde45c03111e430d6b254",
-        "signature": "e15fe32e3d477fb14fd863a4d0c53dc1614f1d4260da1782b905c90505eb51d1",
+        "version": "ee0ff2efe1460fb5b6640562a2ff76e97512ebf132228a130a7d4e50cd3972dc",
+        "signature": "ec71b0878beccb509b668cccdc117efba5e06ae1032429140bb6dd4d163f1d17",
         "affectsGlobalScope": false
       },
       "../src/commands/trivia/8ballcommand.ts": {
-        "version": "d04f896f2250baa2266bb767556f6bd82fb5ee82a313c728be63f097ed265179",
+        "version": "5abd785f12015c1ab6b665639456aaf0f73d4d912045234f14c425f6504e0316",
         "signature": "9bcb03d40cc829a06b4e197feac035115a8e23bb55fcc7452ee18722f377bd3e",
         "affectsGlobalScope": false
       },
       "../src/listeners/client/readylister.ts": {
-        "version": "7c8720ca5dc4a3f6a08ad04dd26cee01ddf39dd5b4e41e914e69dd5988204fc7",
+        "version": "569d7b34ebdcbf1668a2e8353799805708cfebc444f9531a86cc0bef6aed5b83",
         "signature": "029c68368fe4e44c6450549ddb0f4bf94392ea68a9c6d5238e874abedc44a1ba",
+        "affectsGlobalScope": false
+      },
+      "../src/listeners/commandlistener/cooldownlistener.ts": {
+        "version": "6ad1df4e35e3d8519c2e194e8e7184b41d7f5a073a571499b54f97a6fbd66876",
+        "signature": "84bac23b6deced06089546bc2755d955fe013b106d0d501699aa3f713e887692",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/node/globals.d.ts": {
@@ -798,6 +803,10 @@
       ],
       "../src/listeners/client/readylister.ts": [
         "../node_modules/discord-akairo/src/index.d.ts"
+      ],
+      "../src/listeners/commandlistener/cooldownlistener.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
       ]
     },
     "exportedModulesMap": {
@@ -1053,7 +1062,8 @@
         "../node_modules/discord.js/typings/index.d.ts"
       ],
       "../src/commands/moderation/bancommand.ts": [
-        "../node_modules/discord-akairo/src/index.d.ts"
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
       ],
       "../src/commands/trivia/8ballcommand.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
@@ -1061,6 +1071,10 @@
       ],
       "../src/listeners/client/readylister.ts": [
         "../node_modules/discord-akairo/src/index.d.ts"
+      ],
+      "../src/listeners/commandlistener/cooldownlistener.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -1164,7 +1178,8 @@
       "../src/commands/trivia/8ballcommand.ts",
       "../src/config.ts",
       "../src/db.ts",
-      "../src/listeners/client/readylister.ts"
+      "../src/listeners/client/readylister.ts",
+      "../src/listeners/commandlistener/cooldownlistener.ts"
     ]
   },
   "version": "4.2.4"
