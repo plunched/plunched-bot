@@ -1,9 +1,7 @@
 import { Command } from "discord-akairo";
 import {
   Message,
-  MessageEmbed,
-  ClientApplication,
-  ClientUser,
+  MessageEmbed
 } from "discord.js";
 const ms = require("ms");
 

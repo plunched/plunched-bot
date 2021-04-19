@@ -257,7 +257,7 @@
         "affectsGlobalScope": false
       },
       "../src/commands/information/botinfo.ts": {
-        "version": "e76fea8f0c23a76836bc6068f95cef4c3e57ff018a2e1049228fd5e6cf3d69cd",
+        "version": "7127d1bbabd6bdf2f6ecf45db6f09f0617f1639f0977bf75ac66c3b2d754c66a",
         "signature": "da834ce79766b09cfe41be55a79f05e080818af5495fd94c5933894edd2f2dd9",
         "affectsGlobalScope": false
       },
