@@ -31,6 +31,6 @@ export default class _8ballCommand extends Command {
     });
   }
   public exec(message: Message): Promise<Message> {
-    return message.reply(`${answer}`);
+    return message.util.reply(`${answer}`);
   }
 }
