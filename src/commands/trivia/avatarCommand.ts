@@ -5,7 +5,7 @@ export default class AvatarCommand extends Command {
   constructor() {
     super("avatar", {
       aliases: ["avatar", "av"],
-      category: "information",
+      category: "trivia",
       description: {
         content: "display the avatar of a member",
         usage: "avatar <member> <size>",
@@ -49,9 +49,12 @@ export default class AvatarCommand extends Command {
   ): Promise<Message> {
     return message.util.send(
       new MessageEmbed()
+        .setColor(this.client.colors.default)
         .setTitle(`Avatar ${member.user.tag}`)
-        .setColor("RANDOM")
+        .setColor(this.client.colors.default)
         .setImage(member.user.displayAvatarURL({ size: size as ImageSize }))
+        .setTimestamp()
+        .setFooter(this.client.user.tag, this.client.user.displayAvatarURL())
     );
   }
 }

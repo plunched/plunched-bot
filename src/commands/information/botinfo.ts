@@ -1,8 +1,5 @@
 import { Command } from "discord-akairo";
-import {
-  Message,
-  MessageEmbed
-} from "discord.js";
+import { Message, MessageEmbed } from "discord.js";
 const ms = require("ms");
 
 export default class botInfoCommand extends Command {
@@ -22,12 +19,13 @@ export default class botInfoCommand extends Command {
   public exec(message: Message): Promise<Message> {
     return message.util.send(
       new MessageEmbed()
-        .setAuthor(
+      .setAuthor(
           message.member.user.tag,
           message.author.displayAvatarURL({ dynamic: true })
         )
         .setTitle("Plunched-bot's info")
         .setDescription("This bot was developed by <@531953738491887627>")
+        .setColor(this.client.colors.default)
         .addFields(
           {
             name: `servers:`,
@@ -65,6 +63,8 @@ export default class botInfoCommand extends Command {
               "[support server](https://discord.gg/pDqXpZAVPY) | [add bot](https://discord.com/api/oauth2/authorize?client_id=806242381866205195&permissions=2147483647&scope=bot) | [vote here](https://discordbotlist.com/bots/plunched-bot/upvote)",
           }
         )
+        .setTimestamp()
+        .setFooter(this.client.user.tag, this.client.user.displayAvatarURL())
     );
   }
 }

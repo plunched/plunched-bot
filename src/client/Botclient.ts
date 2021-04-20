@@ -1,23 +1,26 @@
 import { AkairoClient, CommandHandler, ListenerHandler } from "discord-akairo";
 import { User, Message } from "discord.js";
 import { join } from "path";
-import { prefix, owners } from "../config";
+import { prefix, owners, colors } from "../config";
 import { Intents } from "discord.js";
 
 declare module "discord-akairo" {
   interface AkairoClient {
     commandHandler: CommandHandler;
     listenerHandler: ListenerHandler;
+    colors: typeof colors;
   }
 }
 
 interface BotOptions {
   token?: string;
   owners?: string | string[];
+  colors?: object;
 }
 
 export default class BotClient extends AkairoClient {
   public config: BotOptions;
+  public colors = colors;
   public listenerHandler: ListenerHandler = new ListenerHandler(this, {
     directory: join(__dirname, "..", "listeners"),
   });
@@ -33,13 +36,12 @@ export default class BotClient extends AkairoClient {
     argumentDefaults: {
       prompt: {
         modifyStart: (_: Message, str: string): string =>
-          `${str}\n\nType \`cancel\` to cancel the command`,
+          `${str}\nType \`cancel\` to cancel the prompt.`,
         modifyRetry: (_: Message, str: string): string =>
-          `${str}\n\nType \`cancel\` to cancel the command`,
-        timeout:
-          "The command has been automatically canceled due to a timeout...",
+          `${str}\nType \`cancel\` to cancel the prompt.`,
+        timeout: "The command has been automatically canceled...",
         ended:
-          "The command has been automatically canceled because the tries have been exceeded.",
+          "The command has been automatically canceled due to exceeded tries...",
         cancel: "canceled the command...",
         time: 3e4,
       },
