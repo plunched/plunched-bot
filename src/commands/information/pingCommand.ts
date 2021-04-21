@@ -1,5 +1,6 @@
 import { Command } from "discord-akairo";
-import { Message } from "discord.js";
+import { Message, MessageEmbed } from "discord.js";
+import guild from "../../client/guilds";
 
 export default class pingCommand extends Command {
   constructor() {
@@ -15,7 +16,40 @@ export default class pingCommand extends Command {
     });
   }
 
-  public exec(message: Message): Promise<Message> {
-    return message.util.send(`pong! \`${this.client.ws.ping}ms\``);
+  public async exec(message: Message): Promise<Message> {
+    const pingMessage = message.util.send(
+      `<a:discord_loading:809731356057141258> finding ping`
+    );
+
+    const preDate = Date.now();
+    await guild.fetch(message.guild.id, message.guild.name);
+    const dbPing = Date.now() - preDate;
+
+    return (await pingMessage).edit(
+      "",
+      new MessageEmbed()
+        .setAuthor(
+          message.member.user.tag,
+          message.author.displayAvatarURL({ dynamic: true })
+        )
+        .addFields(
+          {
+            name: "api latency:",
+            value: `\`${this.client.ws.ping}ms\``,
+          },
+          {
+            name: "database latency:",
+            value: `\`${dbPing}ms\``,
+          },
+          {
+            name: "\u200b",
+            value:
+              "[support server](https://discord.gg/pDqXpZAVPY) | [add bot](https://discord.com/api/oauth2/authorize?client_id=806242381866205195&permissions=2147483647&scope=bot) | [vote here](https://discordbotlist.com/bots/plunched-bot/upvote)",
+          }
+        )
+        .setColor("738adb")
+        .setTimestamp()
+        .setFooter(this.client.user.tag, this.client.user.displayAvatarURL())
+    );
   }
 }

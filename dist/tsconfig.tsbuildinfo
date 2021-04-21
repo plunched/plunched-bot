@@ -237,7 +237,7 @@
         "affectsGlobalScope": false
       },
       "../src/client/botclient.ts": {
-        "version": "35980d89e9e136a27eb8f0064385e46fe2145751a20f6fbf7a5788841824594f",
+        "version": "31005f169addb6d9e46b649c0b7e218ba1a9fcf9b39dfea16f89500b874b5b0b",
         "signature": "541dcd50a676b64e96470faa11d59e38db53415baf618b6adb13597f9f499df9",
         "affectsGlobalScope": false
       },
@@ -251,13 +251,28 @@
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
         "affectsGlobalScope": false
       },
+      "../src/client/guilds.ts": {
+        "version": "087a184f58f9d2350c6b0a83b34355f0a351cf528008aca64783c94ffe8242f2",
+        "signature": "f68f6f396220ff645409e58bebf62d6ae475acf84da2099e21bb8bc1f6cff5ef",
+        "affectsGlobalScope": false
+      },
+      "../src/commands/information/botinvite.ts": {
+        "version": "d70533133d558aab4d024014f2dcf09ca9da5d7ffa6b12fc510f06c2cc95f35f",
+        "signature": "df322b3ce2947d53a993d54915eac9bf999b8061c064195a209c3f740f3c1f4d",
+        "affectsGlobalScope": false
+      },
+      "../src/commands/information/botvotecommand.ts": {
+        "version": "8df82fb3ad97d738a5c591addd3f61b9adca8fedef40d3f53e02e73e3a783903",
+        "signature": "c20973bc33f55060ef065eb6acf5df0acb98fc322bf84d1aea1ad06ed6eca207",
+        "affectsGlobalScope": false
+      },
       "../src/commands/information/botinfo.ts": {
         "version": "5e22a6ac71695072ef3a83f4b18a1fc0f8d2380b29d57ba8887cfd0898ac5284",
         "signature": "da834ce79766b09cfe41be55a79f05e080818af5495fd94c5933894edd2f2dd9",
         "affectsGlobalScope": false
       },
       "../src/commands/information/pingcommand.ts": {
-        "version": "c26a777f49dcfe6f7ec8c9be30dd45f64b99d689b8e14cce59176bfc6c0ff564",
+        "version": "1a34e7d1e4c07b53dca3cb5ab1a7ee8387ffab793d79f246c74005855e3e3650",
         "signature": "16644a0d23cf8e57d463a6419150b2f0162c637159666d8dea733d350a63abdd",
         "affectsGlobalScope": false
       },
@@ -790,13 +805,25 @@
         "../node_modules/discord.js/typings/index.d.ts",
         "../src/config.ts"
       ],
+      "../src/client/guilds.ts": [
+        "../src/db.ts"
+      ],
       "../src/commands/information/botinfo.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
+      "../src/commands/information/botinvite.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
+      "../src/commands/information/botvotecommand.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
       "../src/commands/information/pingcommand.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
-        "../node_modules/discord.js/typings/index.d.ts"
+        "../node_modules/discord.js/typings/index.d.ts",
+        "../src/client/guilds.ts"
       ],
       "../src/commands/moderation/bancommand.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
@@ -1067,6 +1094,14 @@
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
+      "../src/commands/information/botinvite.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
+      "../src/commands/information/botvotecommand.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
       "../src/commands/information/pingcommand.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
@@ -1186,7 +1221,10 @@
       "../node_modules/discord.js/typings/index.d.ts",
       "../src/bot.ts",
       "../src/client/botclient.ts",
+      "../src/client/guilds.ts",
       "../src/commands/information/botinfo.ts",
+      "../src/commands/information/botinvite.ts",
+      "../src/commands/information/botvotecommand.ts",
       "../src/commands/information/pingcommand.ts",
       "../src/commands/moderation/bancommand.ts",
       "../src/commands/trivia/8ballcommand.ts",
