@@ -1,5 +1,5 @@
 import { Command } from "discord-akairo";
-import { Message, MessageEmbed } from "discord.js";
+import { Message } from "discord.js";
 
 export default class botInviteCommand extends Command {
   constructor() {
