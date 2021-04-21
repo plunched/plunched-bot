@@ -3,6 +3,7 @@ import { User, Message } from "discord.js";
 import { join } from "path";
 import { prefix, owners, colors } from "../config";
 import { Intents } from "discord.js";
+import { pool } from "../db";
 
 declare module "discord-akairo" {
   interface AkairoClient {
@@ -26,7 +27,17 @@ export default class BotClient extends AkairoClient {
   });
   public commandHandler: CommandHandler = new CommandHandler(this, {
     directory: join(__dirname, "..", "commands"),
-    prefix: prefix,
+    prefix: async (msg): Promise<string | string[]> => {
+      await pool.query(
+        "INSERT INTO guilds (guildID, guildName, prefixes, modulesID) VALUES($1, $2, $3, $1) ON CONFLICT DO NOTHING",
+        [msg.guild.id, msg.guild.name, prefix]
+      );
+      let guildSettings = await pool.query(
+        "SELECT * FROM guilds WHERE guildID = $1;",
+        [msg.guild.id]
+      );
+      return guildSettings.rows[0].prefixes;
+    },
     allowMention: true,
     handleEdits: true,
     commandUtil: true,

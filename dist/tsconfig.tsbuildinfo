@@ -236,14 +236,14 @@
         "signature": "cb2a7eac053556da539ac76159bbafbeb72b5a7c61a5f3d510ba16ffe27e0333",
         "affectsGlobalScope": false
       },
-      "../src/client/botclient.ts": {
-        "version": "31005f169addb6d9e46b649c0b7e218ba1a9fcf9b39dfea16f89500b874b5b0b",
-        "signature": "541dcd50a676b64e96470faa11d59e38db53415baf618b6adb13597f9f499df9",
-        "affectsGlobalScope": false
-      },
       "../src/db.ts": {
         "version": "6e9957caf24055b8b34a6ba7ff8ccb3972258f65f0e64658aee8fc045ea0ad11",
         "signature": "83141ad9c1ca73e0d10894b9cba5b88691b1958e5330a5a68ed696634cfc731c",
+        "affectsGlobalScope": false
+      },
+      "../src/client/botclient.ts": {
+        "version": "a62eba84ce738bdac8b55fd64ea30c77d3902c041d62299ab2418aaf91d73e12",
+        "signature": "541dcd50a676b64e96470faa11d59e38db53415baf618b6adb13597f9f499df9",
         "affectsGlobalScope": false
       },
       "../src/bot.ts": {
@@ -257,7 +257,7 @@
         "affectsGlobalScope": false
       },
       "../src/commands/information/botinvite.ts": {
-        "version": "d70533133d558aab4d024014f2dcf09ca9da5d7ffa6b12fc510f06c2cc95f35f",
+        "version": "dac87cee9528e7f303e6af9d723eeae500466b3f2ed32e822e5585a7fb8db541",
         "signature": "df322b3ce2947d53a993d54915eac9bf999b8061c064195a209c3f740f3c1f4d",
         "affectsGlobalScope": false
       },
@@ -274,6 +274,11 @@
       "../src/commands/information/pingcommand.ts": {
         "version": "1a34e7d1e4c07b53dca3cb5ab1a7ee8387ffab793d79f246c74005855e3e3650",
         "signature": "16644a0d23cf8e57d463a6419150b2f0162c637159666d8dea733d350a63abdd",
+        "affectsGlobalScope": false
+      },
+      "../src/commands/information/serverinfo.ts": {
+        "version": "ad2a2981cfc256ef611d99892eb7581a17438e1c8b262fd73eb4a93494f2fea7",
+        "signature": "d101153df8298faf01e92741e1ccc0983b4b14363d4177960a2d7f2d9a7fcbb3",
         "affectsGlobalScope": false
       },
       "../src/commands/moderation/bancommand.ts": {
@@ -803,7 +808,8 @@
         "../node_modules/@types/node/path.d.ts",
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts",
-        "../src/config.ts"
+        "../src/config.ts",
+        "../src/db.ts"
       ],
       "../src/client/guilds.ts": [
         "../src/db.ts"
@@ -824,6 +830,10 @@
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts",
         "../src/client/guilds.ts"
+      ],
+      "../src/commands/information/serverinfo.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
       ],
       "../src/commands/moderation/bancommand.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
@@ -1106,6 +1116,10 @@
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
+      "../src/commands/information/serverinfo.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
       "../src/commands/moderation/bancommand.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
@@ -1226,6 +1240,7 @@
       "../src/commands/information/botinvite.ts",
       "../src/commands/information/botvotecommand.ts",
       "../src/commands/information/pingcommand.ts",
+      "../src/commands/information/serverinfo.ts",
       "../src/commands/moderation/bancommand.ts",
       "../src/commands/trivia/8ballcommand.ts",
       "../src/commands/trivia/avatarcommand.ts",
