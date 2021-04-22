@@ -8,7 +8,7 @@ export default class botInfoCommand extends Command {
       aliases: ["botinfo", "bot-info", "info"],
       category: "information",
       description: {
-        content: "returns info about the bot",
+        content: "Gives you info about the bot.",
         usage: "bot-info",
         examples: ["botinfo", "info"],
       },

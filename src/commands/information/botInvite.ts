@@ -13,7 +13,7 @@ export default class botInviteCommand extends Command {
       ],
       category: "information",
       description: {
-        content: "returns invite of the bot",
+        content: "Gives you the link to invite the bot.",
         usage: "botInvite",
         examples: ["bot-invite", "invite"],
       },

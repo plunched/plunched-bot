@@ -8,7 +8,7 @@ export default class botInfoCommand extends Command {
       aliases: ["botVote", "bot-vote", "vote"],
       category: "information",
       description: {
-        content: "returns the link to invite the bot",
+        content: "Gives you the link to vote for the bot.",
         usage: "bot-Vote",
         examples: ["botVote", "vote"],
       },

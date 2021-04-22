@@ -23,7 +23,7 @@ export default class _8ballCommand extends Command {
       aliases: ["8ball", "question"],
       category: "trivia",
       description: {
-        content: "answers a question you ask it.",
+        content: "Answers a question you ask it.",
         usage: "8ball <question>",
         examples: ["8ball am I cool?"],
       },

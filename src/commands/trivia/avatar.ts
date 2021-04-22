@@ -7,7 +7,7 @@ export default class AvatarCommand extends Command {
       aliases: ["avatar", "av"],
       category: "trivia",
       description: {
-        content: "display the avatar of a member",
+        content: "Display the avatar of a member.",
         usage: "avatar <member> <size>",
         examples: [
           "avatar",

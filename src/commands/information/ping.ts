@@ -8,7 +8,7 @@ export default class pingCommand extends Command {
       aliases: ["ping"],
       category: "information",
       description: {
-        content: "Check the latency of the bot",
+        content: "Check the latency of the bot.",
         usage: "ping",
         examples: ["ping"],
       },

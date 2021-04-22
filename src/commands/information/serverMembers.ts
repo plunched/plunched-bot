@@ -7,7 +7,7 @@ export default class serverMembersCommand extends Command {
       aliases: ["serverMembers", "members", "server-members"],
       category: "information",
       description: {
-        content: "returns the amount of members in the server",
+        content: "Tells you how many members this server has.",
         usage: "server-members",
         examples: ["server-members", "members"],
       },

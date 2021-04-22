@@ -8,7 +8,7 @@ export default class banCommand extends Command {
       aliases: ["ban", "b"],
       category: "moderation",
       description: {
-        content: "bans a given user",
+        content: "Bans a given user.",
         usage: "ban <user> <reason>",
         examples: [
           "ban @user",

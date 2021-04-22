@@ -10,7 +10,7 @@ export default class botInviteCommand extends Command {
       aliases: ["serverInfo", "server-info", "server"],
       category: "information",
       description: {
-        content: "returns info about the current server",
+        content: "Gives you information about the server.",
         usage: "server-Info",
         examples: ["server-info", "server"],
       },
