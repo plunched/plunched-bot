@@ -217,8 +217,8 @@
         "affectsGlobalScope": true
       },
       "../src/config.ts": {
-        "version": "9757a974d4e1b9d0aa5abeeb26b0d4b85eac20d7e7e4fb4c737ceb3a8514cbb3",
-        "signature": "f01605d7e429cd96e539f2c7e85bcd03cc6009866654590559ba18f9a7a6f761",
+        "version": "449f01b75b2bc96ffca283fb2e411345e97afa933b059a13ebfcbd52ea2272bf",
+        "signature": "e90d198a2efbf45db9cb9ec894776b034c786062d4a2dd6de7842951931d039a",
         "affectsGlobalScope": false
       },
       "../node_modules/@discordjs/collection/dist/index.d.ts": {
@@ -242,8 +242,8 @@
         "affectsGlobalScope": false
       },
       "../src/client/botclient.ts": {
-        "version": "e2a1ae03e5031af3c66b2a10e374b4b61751b45e08dd7cb3a023d929cbca0a47",
-        "signature": "541dcd50a676b64e96470faa11d59e38db53415baf618b6adb13597f9f499df9",
+        "version": "44f5329891c7b361069f47b8298ffb56b6779b3afb0c3e4868f66a2c0af018d2",
+        "signature": "bb741a170ebf4fe4cb1185b754b97e781b9d5487b37cce0d6cf87ab216fba5ef",
         "affectsGlobalScope": false
       },
       "../src/bot.ts": {
@@ -262,17 +262,17 @@
         "affectsGlobalScope": false
       },
       "../src/commands/information/botvotecommand.ts": {
-        "version": "8df82fb3ad97d738a5c591addd3f61b9adca8fedef40d3f53e02e73e3a783903",
+        "version": "2acaac707e6cdeeaef73545081a32a7add3c4688d7862d09958eb7f1ade55935",
         "signature": "c20973bc33f55060ef065eb6acf5df0acb98fc322bf84d1aea1ad06ed6eca207",
         "affectsGlobalScope": false
       },
       "../src/commands/information/botinfo.ts": {
-        "version": "5e22a6ac71695072ef3a83f4b18a1fc0f8d2380b29d57ba8887cfd0898ac5284",
+        "version": "0e8e56eeb5568918503eb77dec3b760b4845a6ea8194fb43bc9e12e358e24d97",
         "signature": "da834ce79766b09cfe41be55a79f05e080818af5495fd94c5933894edd2f2dd9",
         "affectsGlobalScope": false
       },
       "../src/commands/information/pingcommand.ts": {
-        "version": "be8aba8639404257b54adabcc37a6fc75abeb7b25b5ad4402a5fb65fd37d02de",
+        "version": "5d1882d77aef35e4698e99885f2e6e04312f6397c2ea4d64647e9e7f2874fe58",
         "signature": "16644a0d23cf8e57d463a6419150b2f0162c637159666d8dea733d350a63abdd",
         "affectsGlobalScope": false
       },
@@ -282,8 +282,13 @@
         "affectsGlobalScope": true
       },
       "../src/commands/information/serverinfo.ts": {
-        "version": "df4f414729f1894ba92192016bf23c90544e7f1ba1a04b5517ab904034de8f1d",
+        "version": "1387a69c12746e6b842859a3e5836b4209b58f427d8f4ef8eb478b3af56a9757",
         "signature": "d101153df8298faf01e92741e1ccc0983b4b14363d4177960a2d7f2d9a7fcbb3",
+        "affectsGlobalScope": false
+      },
+      "../src/commands/information/servermemberscommand.ts": {
+        "version": "5f2210efdb53eb8df6a14ce46614f61053521820141d53b56d1be6268908e576",
+        "signature": "f7ad77c4b5c86dd269b4f2f0f4aca0aed5519f93cb01f14f9d57dd983eba348f",
         "affectsGlobalScope": false
       },
       "../src/commands/moderation/bancommand.ts": {
@@ -1041,6 +1046,11 @@
         "../node_modules/discord.js/typings/index.d.ts",
         "../src/db.ts"
       ],
+      "../src/commands/information/servermemberscommand.ts": [
+        "../node_modules/date-fns/typings.d.ts",
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
       "../src/commands/moderation/bancommand.ts": [
         "../node_modules/date-fns/typings.d.ts",
         "../node_modules/discord-akairo/src/index.d.ts",
@@ -1346,6 +1356,10 @@
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
+      "../src/commands/information/servermemberscommand.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
       "../src/commands/moderation/bancommand.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
@@ -1472,6 +1486,7 @@
       "../src/commands/information/botvotecommand.ts",
       "../src/commands/information/pingcommand.ts",
       "../src/commands/information/serverinfo.ts",
+      "../src/commands/information/servermemberscommand.ts",
       "../src/commands/moderation/bancommand.ts",
       "../src/commands/trivia/8ballcommand.ts",
       "../src/commands/trivia/avatarcommand.ts",

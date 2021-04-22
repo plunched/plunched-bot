@@ -9,7 +9,7 @@ export default class botInfoCommand extends Command {
       category: "information",
       description: {
         content: "returns the link to invite the bot",
-        usage: "botVote",
+        usage: "bot-Vote",
         examples: ["botVote", "vote"],
       },
       ratelimit: 3,

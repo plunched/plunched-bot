@@ -1,7 +1,7 @@
 import { AkairoClient, CommandHandler, ListenerHandler } from "discord-akairo";
 import { User, Message } from "discord.js";
 import { join } from "path";
-import { prefix, owners, colors } from "../config";
+import { prefix, owners, colors, emotes } from "../config";
 import { Intents } from "discord.js";
 import { pool } from "../db";
 
@@ -10,18 +10,19 @@ declare module "discord-akairo" {
     commandHandler: CommandHandler;
     listenerHandler: ListenerHandler;
     colors: typeof colors;
+    emotes: typeof emotes;
   }
 }
 
 interface BotOptions {
   token?: string;
   owners?: string | string[];
-  colors?: object;
 }
 
 export default class BotClient extends AkairoClient {
   public config: BotOptions;
   public colors = colors;
+  public emotes = emotes;
   public listenerHandler: ListenerHandler = new ListenerHandler(this, {
     directory: join(__dirname, "..", "listeners"),
   });

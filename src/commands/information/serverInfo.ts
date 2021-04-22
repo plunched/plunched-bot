@@ -3,8 +3,6 @@ import { Message, MessageEmbed } from "discord.js";
 import { formatDistanceToNow } from "date-fns";
 import { pool } from "../../db";
 const ms = require("ms");
-const online = "<:online:830091620845224026>";
-const offline = "<:offline:830091284483670046>";
 
 export default class botInviteCommand extends Command {
   constructor() {
@@ -13,7 +11,7 @@ export default class botInviteCommand extends Command {
       category: "information",
       description: {
         content: "returns info about the current server",
-        usage: "serverInfo",
+        usage: "server-Info",
         examples: ["server-info", "server"],
       },
       ratelimit: 3,
@@ -38,7 +36,7 @@ export default class botInviteCommand extends Command {
     );
     message.util.send(
       new MessageEmbed()
-        .setColor("738adb")
+        .setColor(this.client.colors.default)
         .setTitle(`${message.guild.name}`)
         .addFields(
           {
@@ -53,7 +51,7 @@ export default class botInviteCommand extends Command {
           },
           {
             name: "members",
-            value: `${online} ${onlineMembers} online  |  ${offline} ${message.guild.memberCount} offline`,
+            value: `${this.client.emotes.online} ${onlineMembers} online  |  ${this.client.emotes.offline} ${message.guild.memberCount} offline`,
             inline: false,
           },
           {

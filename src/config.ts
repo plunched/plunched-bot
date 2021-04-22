@@ -5,3 +5,7 @@ export let owners: string | string[] = ["531953738491887627"];
 export let colors = {
   default: "2B30BE",
 };
+export let emotes = {
+  online: "<:online:830091620845224026>",
+  offline: "<:offline:830091284483670046>",
+};

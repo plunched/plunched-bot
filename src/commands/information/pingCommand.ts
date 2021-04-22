@@ -47,7 +47,7 @@ export default class pingCommand extends Command {
               "[support server](https://discord.gg/pDqXpZAVPY) | [add bot](https://discord.com/api/oauth2/authorize?client_id=806242381866205195&permissions=2147483647&scope=bot) | [vote here](https://discordbotlist.com/bots/plunched-bot/upvote)",
           }
         )
-        .setColor("738adb")
+        .setColor(this.client.colors.default)
         .setTimestamp()
         .setFooter(this.client.user.tag, this.client.user.displayAvatarURL())
     );

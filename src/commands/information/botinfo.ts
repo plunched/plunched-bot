@@ -9,7 +9,7 @@ export default class botInfoCommand extends Command {
       category: "information",
       description: {
         content: "returns info about the bot",
-        usage: "botinfo",
+        usage: "bot-info",
         examples: ["botinfo", "info"],
       },
       ratelimit: 3,
