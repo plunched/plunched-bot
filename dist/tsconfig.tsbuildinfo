@@ -261,7 +261,7 @@
         "signature": "df322b3ce2947d53a993d54915eac9bf999b8061c064195a209c3f740f3c1f4d",
         "affectsGlobalScope": false
       },
-      "../src/commands/information/botvotecommand.ts": {
+      "../src/commands/information/botvote.ts": {
         "version": "2acaac707e6cdeeaef73545081a32a7add3c4688d7862d09958eb7f1ade55935",
         "signature": "c20973bc33f55060ef065eb6acf5df0acb98fc322bf84d1aea1ad06ed6eca207",
         "affectsGlobalScope": false
@@ -271,7 +271,7 @@
         "signature": "da834ce79766b09cfe41be55a79f05e080818af5495fd94c5933894edd2f2dd9",
         "affectsGlobalScope": false
       },
-      "../src/commands/information/pingcommand.ts": {
+      "../src/commands/information/ping.ts": {
         "version": "5d1882d77aef35e4698e99885f2e6e04312f6397c2ea4d64647e9e7f2874fe58",
         "signature": "16644a0d23cf8e57d463a6419150b2f0162c637159666d8dea733d350a63abdd",
         "affectsGlobalScope": false
@@ -286,27 +286,32 @@
         "signature": "d101153df8298faf01e92741e1ccc0983b4b14363d4177960a2d7f2d9a7fcbb3",
         "affectsGlobalScope": false
       },
-      "../src/commands/information/servermemberscommand.ts": {
+      "../src/commands/information/servermembers.ts": {
         "version": "5f2210efdb53eb8df6a14ce46614f61053521820141d53b56d1be6268908e576",
         "signature": "f7ad77c4b5c86dd269b4f2f0f4aca0aed5519f93cb01f14f9d57dd983eba348f",
         "affectsGlobalScope": false
       },
-      "../src/commands/moderation/bancommand.ts": {
+      "../src/commands/information/uptime.ts": {
+        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "affectsGlobalScope": false
+      },
+      "../src/commands/moderation/ban.ts": {
         "version": "ee0ff2efe1460fb5b6640562a2ff76e97512ebf132228a130a7d4e50cd3972dc",
         "signature": "ec71b0878beccb509b668cccdc117efba5e06ae1032429140bb6dd4d163f1d17",
         "affectsGlobalScope": false
       },
-      "../src/commands/trivia/8ballcommand.ts": {
+      "../src/commands/trivia/8ball.ts": {
         "version": "5abd785f12015c1ab6b665639456aaf0f73d4d912045234f14c425f6504e0316",
         "signature": "9bcb03d40cc829a06b4e197feac035115a8e23bb55fcc7452ee18722f377bd3e",
         "affectsGlobalScope": false
       },
-      "../src/commands/trivia/avatarcommand.ts": {
+      "../src/commands/trivia/avatar.ts": {
         "version": "32959d9b52dd543a2dcdcc17c8d0c710e437c78d0ab818ab8b0f2c61987ab51e",
         "signature": "56c5ece37261e8aed386745162a06d753b37432260e02d05f72f38e69603b7dd",
         "affectsGlobalScope": false
       },
-      "../src/listeners/client/readylister.ts": {
+      "../src/listeners/client/ready.ts": {
         "version": "569d7b34ebdcbf1668a2e8353799805708cfebc444f9531a86cc0bef6aed5b83",
         "signature": "029c68368fe4e44c6450549ddb0f4bf94392ea68a9c6d5238e874abedc44a1ba",
         "affectsGlobalScope": false
@@ -316,7 +321,7 @@
         "signature": "c81028f7bfb28e0d9582ed78b016a9dae55e2121c485b8f86f7adf844261b529",
         "affectsGlobalScope": false
       },
-      "../src/listeners/commandlistener/cooldownlistener.ts": {
+      "../src/listeners/commandlistener/cooldown.ts": {
         "version": "9a23f7853c5e246803e6fdeeac78c282eed696e988f0658d0972ee9a9af57d6f",
         "signature": "84bac23b6deced06089546bc2755d955fe013b106d0d501699aa3f713e887692",
         "affectsGlobalScope": false
@@ -1029,12 +1034,12 @@
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
-      "../src/commands/information/botvotecommand.ts": [
+      "../src/commands/information/botvote.ts": [
         "../node_modules/date-fns/typings.d.ts",
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
-      "../src/commands/information/pingcommand.ts": [
+      "../src/commands/information/ping.ts": [
         "../node_modules/date-fns/typings.d.ts",
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts",
@@ -1046,22 +1051,25 @@
         "../node_modules/discord.js/typings/index.d.ts",
         "../src/db.ts"
       ],
-      "../src/commands/information/servermemberscommand.ts": [
+      "../src/commands/information/servermembers.ts": [
         "../node_modules/date-fns/typings.d.ts",
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
-      "../src/commands/moderation/bancommand.ts": [
+      "../src/commands/information/uptime.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../src/commands/moderation/ban.ts": [
         "../node_modules/date-fns/typings.d.ts",
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
-      "../src/commands/trivia/8ballcommand.ts": [
+      "../src/commands/trivia/8ball.ts": [
         "../node_modules/date-fns/typings.d.ts",
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
-      "../src/commands/trivia/avatarcommand.ts": [
+      "../src/commands/trivia/avatar.ts": [
         "../node_modules/date-fns/typings.d.ts",
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
@@ -1072,11 +1080,11 @@
       "../src/db.ts": [
         "../node_modules/date-fns/typings.d.ts"
       ],
-      "../src/listeners/client/readylister.ts": [
+      "../src/listeners/client/ready.ts": [
         "../node_modules/date-fns/typings.d.ts",
         "../node_modules/discord-akairo/src/index.d.ts"
       ],
-      "../src/listeners/commandlistener/cooldownlistener.ts": [
+      "../src/listeners/commandlistener/cooldown.ts": [
         "../node_modules/date-fns/typings.d.ts",
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
@@ -1089,77 +1097,231 @@
       ]
     },
     "exportedModulesMap": {
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.collection.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.core.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.generator.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.iterable.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.promise.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.proxy.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.reflect.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.array.include.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.intl.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.object.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.string.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.intl.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.promise.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.regexp.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2019.array.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2019.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2019.object.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2019.string.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2019.symbol.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2020.bigint.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2020.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2020.intl.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2020.promise.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2020.sharedmemory.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2020.string.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.esnext.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.esnext.intl.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.esnext.promise.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.esnext.string.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../../../../appdata/roaming/npm/node_modules/typescript/lib/lib.esnext.weakref.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../node_modules/@discordjs/collection/dist/index.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
       "../node_modules/@types/node/assert.d.ts": [
-        "../node_modules/@types/node/assert.d.ts"
+        "../node_modules/@types/node/assert.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/async_hooks.d.ts": [
-        "../node_modules/@types/node/async_hooks.d.ts"
+        "../node_modules/@types/node/async_hooks.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/base.d.ts": [
         "../node_modules/@types/node/assert.d.ts",
-        "../node_modules/@types/node/ts3.6/base.d.ts"
+        "../node_modules/@types/node/ts3.6/base.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/buffer.d.ts": [
-        "../node_modules/@types/node/buffer.d.ts"
+        "../node_modules/@types/node/buffer.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/child_process.d.ts": [
         "../node_modules/@types/node/child_process.d.ts",
         "../node_modules/@types/node/events.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/net.d.ts",
-        "../node_modules/@types/node/stream.d.ts"
+        "../node_modules/@types/node/stream.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/cluster.d.ts": [
         "../node_modules/@types/node/child_process.d.ts",
         "../node_modules/@types/node/cluster.d.ts",
         "../node_modules/@types/node/events.d.ts",
-        "../node_modules/@types/node/net.d.ts"
+        "../node_modules/@types/node/net.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/console.d.ts": [
-        "../node_modules/@types/node/util.d.ts"
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/constants.d.ts": [
         "../node_modules/@types/node/constants.d.ts",
         "../node_modules/@types/node/crypto.d.ts",
         "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/os.d.ts"
+        "../node_modules/@types/node/os.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/crypto.d.ts": [
         "../node_modules/@types/node/crypto.d.ts",
-        "../node_modules/@types/node/stream.d.ts"
+        "../node_modules/@types/node/stream.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/dgram.d.ts": [
         "../node_modules/@types/node/dgram.d.ts",
         "../node_modules/@types/node/dns.d.ts",
         "../node_modules/@types/node/events.d.ts",
-        "../node_modules/@types/node/net.d.ts"
+        "../node_modules/@types/node/net.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/dns.d.ts": [
-        "../node_modules/@types/node/dns.d.ts"
+        "../node_modules/@types/node/dns.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/domain.d.ts": [
         "../node_modules/@types/node/domain.d.ts",
-        "../node_modules/@types/node/events.d.ts"
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/events.d.ts": [
-        "../node_modules/@types/node/events.d.ts"
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/fs.d.ts": [
         "../node_modules/@types/node/events.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/fs/promises.d.ts",
         "../node_modules/@types/node/stream.d.ts",
-        "../node_modules/@types/node/url.d.ts"
+        "../node_modules/@types/node/url.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/fs/promises.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/fs/promises.d.ts"
+        "../node_modules/@types/node/fs/promises.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../node_modules/@types/node/globals.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../node_modules/@types/node/globals.global.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/http.d.ts": [
         "../node_modules/@types/node/http.d.ts",
         "../node_modules/@types/node/net.d.ts",
         "../node_modules/@types/node/stream.d.ts",
-        "../node_modules/@types/node/url.d.ts"
+        "../node_modules/@types/node/url.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/http2.d.ts": [
         "../node_modules/@types/node/events.d.ts",
@@ -1169,76 +1331,95 @@
         "../node_modules/@types/node/net.d.ts",
         "../node_modules/@types/node/stream.d.ts",
         "../node_modules/@types/node/tls.d.ts",
-        "../node_modules/@types/node/url.d.ts"
+        "../node_modules/@types/node/url.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/https.d.ts": [
         "../node_modules/@types/node/http.d.ts",
         "../node_modules/@types/node/https.d.ts",
         "../node_modules/@types/node/tls.d.ts",
-        "../node_modules/@types/node/url.d.ts"
+        "../node_modules/@types/node/url.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/index.d.ts": [
-        "../node_modules/@types/node/base.d.ts"
+        "../node_modules/@types/node/base.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/inspector.d.ts": [
         "../node_modules/@types/node/events.d.ts",
-        "../node_modules/@types/node/inspector.d.ts"
+        "../node_modules/@types/node/inspector.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/module.d.ts": [
         "../node_modules/@types/node/module.d.ts",
-        "../node_modules/@types/node/url.d.ts"
+        "../node_modules/@types/node/url.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/net.d.ts": [
         "../node_modules/@types/node/dns.d.ts",
         "../node_modules/@types/node/events.d.ts",
         "../node_modules/@types/node/net.d.ts",
-        "../node_modules/@types/node/stream.d.ts"
+        "../node_modules/@types/node/stream.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/os.d.ts": [
-        "../node_modules/@types/node/os.d.ts"
+        "../node_modules/@types/node/os.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/path.d.ts": [
-        "../node_modules/@types/node/path.d.ts"
+        "../node_modules/@types/node/path.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/perf_hooks.d.ts": [
         "../node_modules/@types/node/async_hooks.d.ts",
-        "../node_modules/@types/node/perf_hooks.d.ts"
+        "../node_modules/@types/node/perf_hooks.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/process.d.ts": [
-        "../node_modules/@types/node/tty.d.ts"
+        "../node_modules/@types/node/tty.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/punycode.d.ts": [
-        "../node_modules/@types/node/punycode.d.ts"
+        "../node_modules/@types/node/punycode.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/querystring.d.ts": [
-        "../node_modules/@types/node/querystring.d.ts"
+        "../node_modules/@types/node/querystring.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/readline.d.ts": [
         "../node_modules/@types/node/events.d.ts",
-        "../node_modules/@types/node/readline.d.ts"
+        "../node_modules/@types/node/readline.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/repl.d.ts": [
         "../node_modules/@types/node/readline.d.ts",
         "../node_modules/@types/node/repl.d.ts",
         "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/vm.d.ts"
+        "../node_modules/@types/node/vm.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/stream.d.ts": [
         "../node_modules/@types/node/events.d.ts",
-        "../node_modules/@types/node/stream.d.ts"
+        "../node_modules/@types/node/stream.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/string_decoder.d.ts": [
-        "../node_modules/@types/node/string_decoder.d.ts"
+        "../node_modules/@types/node/string_decoder.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/timers.d.ts": [
-        "../node_modules/@types/node/timers.d.ts"
+        "../node_modules/@types/node/timers.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/tls.d.ts": [
         "../node_modules/@types/node/net.d.ts",
-        "../node_modules/@types/node/tls.d.ts"
+        "../node_modules/@types/node/tls.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/trace_events.d.ts": [
-        "../node_modules/@types/node/trace_events.d.ts"
+        "../node_modules/@types/node/trace_events.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/ts3.6/base.d.ts": [
         "../node_modules/@types/node/async_hooks.d.ts",
@@ -1282,28 +1463,35 @@
         "../node_modules/@types/node/vm.d.ts",
         "../node_modules/@types/node/wasi.d.ts",
         "../node_modules/@types/node/worker_threads.d.ts",
-        "../node_modules/@types/node/zlib.d.ts"
+        "../node_modules/@types/node/zlib.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/tty.d.ts": [
         "../node_modules/@types/node/net.d.ts",
-        "../node_modules/@types/node/tty.d.ts"
+        "../node_modules/@types/node/tty.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/url.d.ts": [
         "../node_modules/@types/node/querystring.d.ts",
-        "../node_modules/@types/node/url.d.ts"
+        "../node_modules/@types/node/url.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/util.d.ts": [
-        "../node_modules/@types/node/util.d.ts"
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/v8.d.ts": [
         "../node_modules/@types/node/stream.d.ts",
-        "../node_modules/@types/node/v8.d.ts"
+        "../node_modules/@types/node/v8.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/vm.d.ts": [
-        "../node_modules/@types/node/vm.d.ts"
+        "../node_modules/@types/node/vm.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/wasi.d.ts": [
-        "../node_modules/@types/node/wasi.d.ts"
+        "../node_modules/@types/node/wasi.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/worker_threads.d.ts": [
         "../node_modules/@types/node/events.d.ts",
@@ -1311,11 +1499,13 @@
         "../node_modules/@types/node/stream.d.ts",
         "../node_modules/@types/node/url.d.ts",
         "../node_modules/@types/node/vm.d.ts",
-        "../node_modules/@types/node/worker_threads.d.ts"
+        "../node_modules/@types/node/worker_threads.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/@types/node/zlib.d.ts": [
         "../node_modules/@types/node/stream.d.ts",
-        "../node_modules/@types/node/zlib.d.ts"
+        "../node_modules/@types/node/zlib.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../node_modules/date-fns/typings.d.ts": [
         "../node_modules/date-fns/typings.d.ts"
@@ -1323,6 +1513,7 @@
       "../node_modules/discord-akairo/src/index.d.ts": [
         "../node_modules/@types/node/events.d.ts",
         "../node_modules/@types/node/stream.d.ts",
+        "../node_modules/date-fns/typings.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
       "../node_modules/discord.js/typings/index.d.ts": [
@@ -1330,7 +1521,8 @@
         "../node_modules/@types/node/child_process.d.ts",
         "../node_modules/@types/node/events.d.ts",
         "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/stream.d.ts"
+        "../node_modules/@types/node/stream.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
       ],
       "../src/client/botclient.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
@@ -1344,11 +1536,11 @@
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
-      "../src/commands/information/botvotecommand.ts": [
+      "../src/commands/information/botvote.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
-      "../src/commands/information/pingcommand.ts": [
+      "../src/commands/information/ping.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
@@ -1356,26 +1548,26 @@
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
-      "../src/commands/information/servermemberscommand.ts": [
+      "../src/commands/information/servermembers.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
-      "../src/commands/moderation/bancommand.ts": [
+      "../src/commands/moderation/ban.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
-      "../src/commands/trivia/8ballcommand.ts": [
+      "../src/commands/trivia/8ball.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
-      "../src/commands/trivia/avatarcommand.ts": [
+      "../src/commands/trivia/avatar.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
-      "../src/listeners/client/readylister.ts": [
+      "../src/listeners/client/ready.ts": [
         "../node_modules/discord-akairo/src/index.d.ts"
       ],
-      "../src/listeners/commandlistener/cooldownlistener.ts": [
+      "../src/listeners/commandlistener/cooldown.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
@@ -1483,17 +1675,18 @@
       "../src/client/guilds.ts",
       "../src/commands/information/botinfo.ts",
       "../src/commands/information/botinvite.ts",
-      "../src/commands/information/botvotecommand.ts",
-      "../src/commands/information/pingcommand.ts",
+      "../src/commands/information/botvote.ts",
+      "../src/commands/information/ping.ts",
       "../src/commands/information/serverinfo.ts",
-      "../src/commands/information/servermemberscommand.ts",
-      "../src/commands/moderation/bancommand.ts",
-      "../src/commands/trivia/8ballcommand.ts",
-      "../src/commands/trivia/avatarcommand.ts",
+      "../src/commands/information/servermembers.ts",
+      "../src/commands/information/uptime.ts",
+      "../src/commands/moderation/ban.ts",
+      "../src/commands/trivia/8ball.ts",
+      "../src/commands/trivia/avatar.ts",
       "../src/config.ts",
       "../src/db.ts",
-      "../src/listeners/client/readylister.ts",
-      "../src/listeners/commandlistener/cooldownlistener.ts",
+      "../src/listeners/client/ready.ts",
+      "../src/listeners/commandlistener/cooldown.ts",
       "../src/listeners/commandlistener/finnishlistener.ts"
     ]
   },
