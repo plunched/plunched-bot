@@ -282,7 +282,7 @@
         "affectsGlobalScope": true
       },
       "../src/commands/information/serverinfo.ts": {
-        "version": "b43e847ef714c11b3f1cebd7fe46db9e6f24ad9158062f7112a41656d1bd4397",
+        "version": "df4f414729f1894ba92192016bf23c90544e7f1ba1a04b5517ab904034de8f1d",
         "signature": "d101153df8298faf01e92741e1ccc0983b4b14363d4177960a2d7f2d9a7fcbb3",
         "affectsGlobalScope": false
       },

@@ -132,7 +132,8 @@
         "Akairo",
         "bot",
         "client",
-        "ratelimit"
+        "ratelimit",
+        "totalcommands"
     ],
     "sqltools.connections": [
         {
