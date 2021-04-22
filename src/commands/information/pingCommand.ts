@@ -22,7 +22,7 @@ export default class pingCommand extends Command {
     );
 
     const preDate = Date.now();
-    await guild.fetch(message.guild.id, message.guild.name);
+    await guild.fetch(message.guild.id, message.guild.name, message.author.id);
     const dbPing = Date.now() - preDate;
 
     return (await pingMessage).edit(
