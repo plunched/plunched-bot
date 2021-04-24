@@ -287,8 +287,8 @@
         "affectsGlobalScope": false
       },
       "../node_modules/date-fns/typings.d.ts": {
-        "version": "7ad8a941b63580395b951f33afb7b4fb6e6b6e11502b48c1fbf3b9051e58b80f",
-        "signature": "7ad8a941b63580395b951f33afb7b4fb6e6b6e11502b48c1fbf3b9051e58b80f",
+        "version": "37f774f54b369b3675f95be0fc01e973da1a7440d4aae4607c8892fafcb2e99a",
+        "signature": "37f774f54b369b3675f95be0fc01e973da1a7440d4aae4607c8892fafcb2e99a",
         "affectsGlobalScope": true
       },
       "../src/commands/information/serverinfo.ts": {
@@ -326,14 +326,19 @@
         "signature": "029c68368fe4e44c6450549ddb0f4bf94392ea68a9c6d5238e874abedc44a1ba",
         "affectsGlobalScope": false
       },
-      "../src/listeners/commandlistener/finnishlistener.ts": {
+      "../src/listeners/command/finnishlistener.ts": {
         "version": "b42dc5b8c40a99303e5834bd44dcbfc4647fb86e49fbb8dbc4c44b33e514ffe8",
         "signature": "c81028f7bfb28e0d9582ed78b016a9dae55e2121c485b8f86f7adf844261b529",
         "affectsGlobalScope": false
       },
-      "../src/listeners/commandlistener/cooldown.ts": {
+      "../src/listeners/command/cooldown.ts": {
         "version": "9a23f7853c5e246803e6fdeeac78c282eed696e988f0658d0972ee9a9af57d6f",
         "signature": "84bac23b6deced06089546bc2755d955fe013b106d0d501699aa3f713e887692",
+        "affectsGlobalScope": false
+      },
+      "../src/listeners/guilds/memeberadd.ts": {
+        "version": "21dbd137a05a313a274b4b146466a183d5797d8c83be4e6f7fe172fd3d70c776",
+        "signature": "f1797b8a0f50f6e88338228ce66c4c6244af5c962789bdabe0be4e689136e68b",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/node/globals.d.ts": {
@@ -1106,12 +1111,18 @@
         "../node_modules/date-fns/typings.d.ts",
         "../node_modules/discord-akairo/src/index.d.ts"
       ],
-      "../src/listeners/commandlistener/cooldown.ts": [
+      "../src/listeners/command/cooldown.ts": [
         "../node_modules/date-fns/typings.d.ts",
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
-      "../src/listeners/commandlistener/finnishlistener.ts": [
+      "../src/listeners/command/finnishlistener.ts": [
+        "../node_modules/date-fns/typings.d.ts",
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts",
+        "../src/db.ts"
+      ],
+      "../src/listeners/guilds/memeberadd.ts": [
         "../node_modules/date-fns/typings.d.ts",
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts",
@@ -1601,11 +1612,15 @@
       "../src/listeners/client/ready.ts": [
         "../node_modules/discord-akairo/src/index.d.ts"
       ],
-      "../src/listeners/commandlistener/cooldown.ts": [
+      "../src/listeners/command/cooldown.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
-      "../src/listeners/commandlistener/finnishlistener.ts": [
+      "../src/listeners/command/finnishlistener.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
+      "../src/listeners/guilds/memeberadd.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ]
@@ -1722,8 +1737,9 @@
       "../src/config.ts",
       "../src/db.ts",
       "../src/listeners/client/ready.ts",
-      "../src/listeners/commandlistener/cooldown.ts",
-      "../src/listeners/commandlistener/finnishlistener.ts"
+      "../src/listeners/command/cooldown.ts",
+      "../src/listeners/command/finnishlistener.ts",
+      "../src/listeners/guilds/memeberadd.ts"
     ]
   },
   "version": "4.2.4"

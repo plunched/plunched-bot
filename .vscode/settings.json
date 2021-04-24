@@ -135,7 +135,8 @@
         "cmds",
         "crossred",
         "ratelimit",
-        "totalcommands"
+        "totalcommands",
+        "welcomechannel"
     ],
     "sqltools.connections": [
         {

@@ -1,0 +1,22 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const discord_akairo_1 = require("discord-akairo");
+const db_1 = require("../../db");
+class guildMemberAddListener extends discord_akairo_1.Listener {
+    constructor() {
+        super("guildMemberAddListener", {
+            emitter: "client",
+            event: "guildMemberAdd",
+            category: "guildListeners",
+        });
+    }
+    async exec(member) {
+        await db_1.pool.query("INSERT INTO users (userID, cash, bank) VALUES($1, $2, $2) ON CONFLICT DO NOTHING", [member.id, 0]);
+        const guild = await db_1.pool.query("SELECT * FROM guilds LEFT JOIN channels ON guilds.guildID = channels.guildID");
+        const channel = member.guild.channels.cache.get(guild.rows[0].welcomechannel);
+        console.log(channel.id);
+        channel.send(`${member} join the server`);
+    }
+}
+exports.default = guildMemberAddListener;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWVtZWJlckFkZC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3NyYy9saXN0ZW5lcnMvZ3VpbGRzL21lbWViZXJBZGQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxtREFBMEM7QUFFMUMsaUNBQWdDO0FBRWhDLE1BQXFCLHNCQUF1QixTQUFRLHlCQUFRO0lBQzFEO1FBQ0UsS0FBSyxDQUFDLHdCQUF3QixFQUFFO1lBQzlCLE9BQU8sRUFBRSxRQUFRO1lBQ2pCLEtBQUssRUFBRSxnQkFBZ0I7WUFDdkIsUUFBUSxFQUFFLGdCQUFnQjtTQUMzQixDQUFDLENBQUM7SUFDTCxDQUFDO0lBRU0sS0FBSyxDQUFDLElBQUksQ0FBQyxNQUFtQjtRQUNuQyxNQUFNLFNBQUksQ0FBQyxLQUFLLENBQ2Qsa0ZBQWtGLEVBQ2xGLENBQUMsTUFBTSxDQUFDLEVBQUUsRUFBRSxDQUFDLENBQUMsQ0FDZixDQUFDO1FBRUYsTUFBTSxLQUFLLEdBQUcsTUFBTSxTQUFJLENBQUMsS0FBSyxDQUM1Qiw4RUFBOEUsQ0FDL0UsQ0FBQztRQUVGLE1BQU0sT0FBTyxHQUFnQixNQUFNLENBQUMsS0FBSyxDQUFDLFFBQVEsQ0FBQyxLQUFLLENBQUMsR0FBRyxDQUMxRCxLQUFLLENBQUMsSUFBSSxDQUFDLENBQUMsQ0FBQyxDQUFDLGNBQWMsQ0FDZCxDQUFDO1FBQ2pCLE9BQU8sQ0FBQyxHQUFHLENBQUMsT0FBTyxDQUFDLEVBQUUsQ0FBQyxDQUFDO1FBRXhCLE9BQU8sQ0FBQyxJQUFJLENBQUMsR0FBRyxNQUFNLGtCQUFrQixDQUFDLENBQUM7SUFDNUMsQ0FBQztDQUNGO0FBMUJELHlDQTBCQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IExpc3RlbmVyIH0gZnJvbSBcImRpc2NvcmQtYWthaXJvXCI7XHJcbmltcG9ydCB7IEd1aWxkTWVtYmVyLCBUZXh0Q2hhbm5lbCB9IGZyb20gXCJkaXNjb3JkLmpzXCI7XHJcbmltcG9ydCB7IHBvb2wgfSBmcm9tIFwiLi4vLi4vZGJcIjtcclxuXHJcbmV4cG9ydCBkZWZhdWx0IGNsYXNzIGd1aWxkTWVtYmVyQWRkTGlzdGVuZXIgZXh0ZW5kcyBMaXN0ZW5lciB7XHJcbiAgY29uc3RydWN0b3IoKSB7XHJcbiAgICBzdXBlcihcImd1aWxkTWVtYmVyQWRkTGlzdGVuZXJcIiwge1xyXG4gICAgICBlbWl0dGVyOiBcImNsaWVudFwiLFxyXG4gICAgICBldmVudDogXCJndWlsZE1lbWJlckFkZFwiLFxyXG4gICAgICBjYXRlZ29yeTogXCJndWlsZExpc3RlbmVyc1wiLFxyXG4gICAgfSk7XHJcbiAgfVxyXG5cclxuICBwdWJsaWMgYXN5bmMgZXhlYyhtZW1iZXI6IEd1aWxkTWVtYmVyKSB7XHJcbiAgICBhd2FpdCBwb29sLnF1ZXJ5KFxyXG4gICAgICBcIklOU0VSVCBJTlRPIHVzZXJzICh1c2VySUQsIGNhc2gsIGJhbmspIFZBTFVFUygkMSwgJDIsICQyKSBPTiBDT05GTElDVCBETyBOT1RISU5HXCIsXHJcbiAgICAgIFttZW1iZXIuaWQsIDBdXHJcbiAgICApO1xyXG5cclxuICAgIGNvbnN0IGd1aWxkID0gYXdhaXQgcG9vbC5xdWVyeShcclxuICAgICAgXCJTRUxFQ1QgKiBGUk9NIGd1aWxkcyBMRUZUIEpPSU4gY2hhbm5lbHMgT04gZ3VpbGRzLmd1aWxkSUQgPSBjaGFubmVscy5ndWlsZElEXCJcclxuICAgICk7XHJcblxyXG4gICAgY29uc3QgY2hhbm5lbDogVGV4dENoYW5uZWwgPSBtZW1iZXIuZ3VpbGQuY2hhbm5lbHMuY2FjaGUuZ2V0KFxyXG4gICAgICBndWlsZC5yb3dzWzBdLndlbGNvbWVjaGFubmVsXHJcbiAgICApIGFzIFRleHRDaGFubmVsO1xyXG4gICAgY29uc29sZS5sb2coY2hhbm5lbC5pZCk7XHJcblxyXG4gICAgY2hhbm5lbC5zZW5kKGAke21lbWJlcn0gam9pbiB0aGUgc2VydmVyYCk7XHJcbiAgfVxyXG59XHJcbiJdfQ==
