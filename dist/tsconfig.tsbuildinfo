@@ -257,22 +257,22 @@
         "affectsGlobalScope": false
       },
       "../src/commands/information/botinvite.ts": {
-        "version": "dac87cee9528e7f303e6af9d723eeae500466b3f2ed32e822e5585a7fb8db541",
+        "version": "ee221809279a0cc13313c388ed5de5b484df633c995fe2fc92c30592644eed97",
         "signature": "df322b3ce2947d53a993d54915eac9bf999b8061c064195a209c3f740f3c1f4d",
         "affectsGlobalScope": false
       },
       "../src/commands/information/botvote.ts": {
-        "version": "2acaac707e6cdeeaef73545081a32a7add3c4688d7862d09958eb7f1ade55935",
+        "version": "493bb1f9b0fd2b87fed7d7edd01a8518304bc8043bf6cfd182c45bde9b4ab0f4",
         "signature": "c20973bc33f55060ef065eb6acf5df0acb98fc322bf84d1aea1ad06ed6eca207",
         "affectsGlobalScope": false
       },
       "../src/commands/information/botinfo.ts": {
-        "version": "0e8e56eeb5568918503eb77dec3b760b4845a6ea8194fb43bc9e12e358e24d97",
+        "version": "443bcbce4b168fd05d24a559260479af3558358098a1e9510e54c1138f59b3e3",
         "signature": "da834ce79766b09cfe41be55a79f05e080818af5495fd94c5933894edd2f2dd9",
         "affectsGlobalScope": false
       },
       "../src/commands/information/ping.ts": {
-        "version": "5d1882d77aef35e4698e99885f2e6e04312f6397c2ea4d64647e9e7f2874fe58",
+        "version": "5e0dfa4902def65436fdb12a8a9057fff3405c2e8b849b7fd8882f7e66a7afe7",
         "signature": "16644a0d23cf8e57d463a6419150b2f0162c637159666d8dea733d350a63abdd",
         "affectsGlobalScope": false
       },
@@ -282,32 +282,32 @@
         "affectsGlobalScope": true
       },
       "../src/commands/information/serverinfo.ts": {
-        "version": "1387a69c12746e6b842859a3e5836b4209b58f427d8f4ef8eb478b3af56a9757",
+        "version": "c00025cf20a5252fcd6f168720bae55c66ee458068b9afb2b9bed47b18128ebf",
         "signature": "d101153df8298faf01e92741e1ccc0983b4b14363d4177960a2d7f2d9a7fcbb3",
         "affectsGlobalScope": false
       },
       "../src/commands/information/servermembers.ts": {
-        "version": "5f2210efdb53eb8df6a14ce46614f61053521820141d53b56d1be6268908e576",
+        "version": "096f478fbe99a0c3dcb30aa5e5c5074a8ce0880e800ecf353cd257acd0621e73",
         "signature": "f7ad77c4b5c86dd269b4f2f0f4aca0aed5519f93cb01f14f9d57dd983eba348f",
         "affectsGlobalScope": false
       },
       "../src/commands/information/uptime.ts": {
-        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "version": "c871bdf25db3611463d0049734ea508b67eebeedc8920c3d99f8f9f472c7bb0f",
+        "signature": "7023283686e921399ebe0678f7d02b4a3c67ea1e0bfc16c100c7a6cca154ca14",
         "affectsGlobalScope": false
       },
       "../src/commands/moderation/ban.ts": {
-        "version": "ee0ff2efe1460fb5b6640562a2ff76e97512ebf132228a130a7d4e50cd3972dc",
+        "version": "0c9b721a52affcb5991833288856b65a5fc2d55b9df2079871b681052c5feb56",
         "signature": "ec71b0878beccb509b668cccdc117efba5e06ae1032429140bb6dd4d163f1d17",
         "affectsGlobalScope": false
       },
       "../src/commands/trivia/8ball.ts": {
-        "version": "5abd785f12015c1ab6b665639456aaf0f73d4d912045234f14c425f6504e0316",
+        "version": "414ca74f84ddbcdce596b2fb2f9566597828fb3d9f0f7e536465ea55208cb1b6",
         "signature": "9bcb03d40cc829a06b4e197feac035115a8e23bb55fcc7452ee18722f377bd3e",
         "affectsGlobalScope": false
       },
       "../src/commands/trivia/avatar.ts": {
-        "version": "32959d9b52dd543a2dcdcc17c8d0c710e437c78d0ab818ab8b0f2c61987ab51e",
+        "version": "77080dbdc2324ae4354ad7520317c4eafcd0ac2739ccc18394c3821ee873e1e7",
         "signature": "56c5ece37261e8aed386745162a06d753b37432260e02d05f72f38e69603b7dd",
         "affectsGlobalScope": false
       },
@@ -1057,7 +1057,9 @@
         "../node_modules/discord.js/typings/index.d.ts"
       ],
       "../src/commands/information/uptime.ts": [
-        "../node_modules/date-fns/typings.d.ts"
+        "../node_modules/date-fns/typings.d.ts",
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
       ],
       "../src/commands/moderation/ban.ts": [
         "../node_modules/date-fns/typings.d.ts",
@@ -1549,6 +1551,10 @@
         "../node_modules/discord.js/typings/index.d.ts"
       ],
       "../src/commands/information/servermembers.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
+      "../src/commands/information/uptime.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],

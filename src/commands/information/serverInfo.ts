@@ -2,7 +2,6 @@ import { Command } from "discord-akairo";
 import { Message, MessageEmbed } from "discord.js";
 import { formatDistanceToNow } from "date-fns";
 import { pool } from "../../db";
-const ms = require("ms");
 
 export default class botInviteCommand extends Command {
   constructor() {
@@ -40,7 +39,7 @@ export default class botInviteCommand extends Command {
         .setTitle(`${message.guild.name}`)
         .addFields(
           {
-            name: `id`,
+            name: `server-id`,
             value: `${message.guild.id}`,
             inline: true,
           },
