@@ -271,6 +271,11 @@
         "signature": "da834ce79766b09cfe41be55a79f05e080818af5495fd94c5933894edd2f2dd9",
         "affectsGlobalScope": false
       },
+      "../src/commands/information/links.ts": {
+        "version": "6a6dee2c98ed9c9c110da560c263ce561e3e4b214ca4ec2a9ade39343344c085",
+        "signature": "fb2644cbbe682d67e45a55502bfa8ee61f0cae4c67e2cffa33d3a445a1ea7db2",
+        "affectsGlobalScope": false
+      },
       "../src/commands/information/ping.ts": {
         "version": "5e0dfa4902def65436fdb12a8a9057fff3405c2e8b849b7fd8882f7e66a7afe7",
         "signature": "16644a0d23cf8e57d463a6419150b2f0162c637159666d8dea733d350a63abdd",
@@ -1039,6 +1044,11 @@
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
+      "../src/commands/information/links.ts": [
+        "../node_modules/date-fns/typings.d.ts",
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
       "../src/commands/information/ping.ts": [
         "../node_modules/date-fns/typings.d.ts",
         "../node_modules/discord-akairo/src/index.d.ts",
@@ -1542,6 +1552,10 @@
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
+      "../src/commands/information/links.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
       "../src/commands/information/ping.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
@@ -1682,6 +1696,7 @@
       "../src/commands/information/botinfo.ts",
       "../src/commands/information/botinvite.ts",
       "../src/commands/information/botvote.ts",
+      "../src/commands/information/links.ts",
       "../src/commands/information/ping.ts",
       "../src/commands/information/serverinfo.ts",
       "../src/commands/information/servermembers.ts",
