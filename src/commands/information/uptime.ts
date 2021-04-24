@@ -18,7 +18,6 @@ export default class upTimeCommand extends Command {
   public async exec(message: Message): Promise<Message> {
     return message.util.send(
       new MessageEmbed()
-        .setColor(this.client.colors.default)
         .setTitle(`My uptime:`)
         .setDescription(`${ms(this.client.uptime)}`)
         .setColor(this.client.colors.default)

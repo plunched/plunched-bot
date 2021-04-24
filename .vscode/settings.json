@@ -132,6 +132,8 @@
         "Akairo",
         "bot",
         "client",
+        "cmds",
+        "crossred",
         "ratelimit",
         "totalcommands"
     ],

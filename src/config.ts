@@ -8,4 +8,6 @@ export let colors = {
 export let emotes = {
   online: "<:online:830091620845224026>",
   offline: "<:offline:830091284483670046>",
+  error: "<:crossred:811612083832750101>",
+  check: "<:checkgreen:811612084164100136>",
 };
