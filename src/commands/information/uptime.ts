@@ -1,6 +1,6 @@
 import { Command } from "discord-akairo";
 import { Message, MessageEmbed } from "discord.js";
-
+const ms = require("ms");
 export default class upTimeCommand extends Command {
   constructor() {
     super("upTimeCommand", {
@@ -20,7 +20,7 @@ export default class upTimeCommand extends Command {
       new MessageEmbed()
         .setColor(this.client.colors.default)
         .setTitle(`My uptime:`)
-        .setDescription(`${this.client.uptime}`)
+        .setDescription(`${ms(this.client.uptime)}`)
         .setColor(this.client.colors.default)
         .setTimestamp()
         .setFooter(this.client.user.tag, this.client.user.displayAvatarURL())

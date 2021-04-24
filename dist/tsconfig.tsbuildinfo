@@ -282,7 +282,7 @@
         "affectsGlobalScope": true
       },
       "../src/commands/information/serverinfo.ts": {
-        "version": "c00025cf20a5252fcd6f168720bae55c66ee458068b9afb2b9bed47b18128ebf",
+        "version": "5d7290ab55772dbb2884f32f4705378e82dfdb38b076bb6333d76f0d8c853cea",
         "signature": "d101153df8298faf01e92741e1ccc0983b4b14363d4177960a2d7f2d9a7fcbb3",
         "affectsGlobalScope": false
       },
@@ -292,7 +292,7 @@
         "affectsGlobalScope": false
       },
       "../src/commands/information/uptime.ts": {
-        "version": "c871bdf25db3611463d0049734ea508b67eebeedc8920c3d99f8f9f472c7bb0f",
+        "version": "d764a9d06ba04dbce36c8845492cda35e054e8799d8d5db68e03ea42ad5856d7",
         "signature": "7023283686e921399ebe0678f7d02b4a3c67ea1e0bfc16c100c7a6cca154ca14",
         "affectsGlobalScope": false
       },
