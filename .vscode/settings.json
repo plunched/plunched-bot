@@ -132,7 +132,10 @@
         "Akairo",
         "bot",
         "client",
-        "ratelimit"
+        "cmds",
+        "crossred",
+        "ratelimit",
+        "totalcommands"
     ],
     "sqltools.connections": [
         {

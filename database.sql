@@ -4,8 +4,8 @@ CREATE TABLE guilds(
     guildID BIGINT PRIMARY KEY,
     guildName VARCHAR(255) NOT NULL,
     prefixes VARCHAR(5) ARRAY[5] NOT NULL,
-    mutedRole VARCHAR(21),
-    logChannel VARCHAR(21)
+    logChannel VARCHAR(21),
+    totalCommands INT NOT NULL
 );
 
 create TABLE disabledModules(
@@ -13,6 +13,13 @@ create TABLE disabledModules(
     disable_Trivia_Module BOOLEAN,
     disable_antiswearing BOOLEAN,
     disable_currency_Module BOOLEAN,
+    FOREIGN KEY (guildID)
+        REFERENCES guilds (guildID)
+);
+
+CREATE TABLE roles(
+    guildID SERIAL PRIMARY KEY,
+    mutedROLE BIGINT,
     FOREIGN KEY (guildID)
         REFERENCES guilds (guildID)
 );
@@ -36,5 +43,15 @@ CREATE TABLE users(
 );
 
 CREATE TABLE inventory(
-    userID BIGINT PRIMARY KEY
+    userID BIGINT PRIMARY KEY,
+    FOREIGN KEY (userID)
+        REFERENCES users (userID)
 );
+
+
+DROP TABLE disabledModules;
+DROP TABLE inventory;
+DROP TABLE warnings;
+DROP TABLE roles;
+DROP TABLE users;
+DROP TABLE guilds;
