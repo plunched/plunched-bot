@@ -31,6 +31,13 @@ CREATE TABLE roles(
         REFERENCES guilds (guildID)
 );
 
+CREATE TABLE messages(
+    guildID BIGINT PRIMARY KEY,
+    welcomeMessage VARCHAR(255),
+    FOREIGN KEY (guildID)
+        REFERENCES guilds (guildID)
+);
+
 CREATE TABLE warnings(
     caseID SERIAL,
     guildID BIGINT NOT NULL,

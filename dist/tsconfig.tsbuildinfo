@@ -242,7 +242,7 @@
         "affectsGlobalScope": false
       },
       "../src/client/botclient.ts": {
-        "version": "44f5329891c7b361069f47b8298ffb56b6779b3afb0c3e4868f66a2c0af018d2",
+        "version": "7b53ec966cfed743aeb1cdd68dad0d62af5e10f289791f2126e112cf72e84804",
         "signature": "f863e86c13cfb89040f8f02ecc6b519d7c880840c8d2f92c4a2bdb5a9fbd6a86",
         "affectsGlobalScope": false
       },
@@ -337,7 +337,7 @@
         "affectsGlobalScope": false
       },
       "../src/listeners/guilds/memeberadd.ts": {
-        "version": "21dbd137a05a313a274b4b146466a183d5797d8c83be4e6f7fe172fd3d70c776",
+        "version": "a30465db247d1edad3c39ab12e8753397dd77cc68b3f7fa721fbdbfc4fd21229",
         "signature": "f1797b8a0f50f6e88338228ce66c4c6244af5c962789bdabe0be4e689136e68b",
         "affectsGlobalScope": false
       },
@@ -1126,6 +1126,7 @@
         "../node_modules/date-fns/typings.d.ts",
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts",
+        "../src/config.ts",
         "../src/db.ts"
       ]
     },
