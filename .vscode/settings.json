@@ -134,6 +134,7 @@
         "client",
         "cmds",
         "crossred",
+        "leavechannel",
         "ratelimit",
         "totalcommands",
         "welcomechannel"

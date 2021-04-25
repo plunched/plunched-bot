@@ -336,6 +336,11 @@
         "signature": "84bac23b6deced06089546bc2755d955fe013b106d0d501699aa3f713e887692",
         "affectsGlobalScope": false
       },
+      "../src/listeners/guilds/memberremove.ts": {
+        "version": "d74c54308ee990b6d1adbd0ea61196109768929348744ea150f6e24b8b4258c9",
+        "signature": "f1797b8a0f50f6e88338228ce66c4c6244af5c962789bdabe0be4e689136e68b",
+        "affectsGlobalScope": false
+      },
       "../src/listeners/guilds/memeberadd.ts": {
         "version": "a30465db247d1edad3c39ab12e8753397dd77cc68b3f7fa721fbdbfc4fd21229",
         "signature": "f1797b8a0f50f6e88338228ce66c4c6244af5c962789bdabe0be4e689136e68b",
@@ -1122,6 +1127,13 @@
         "../node_modules/discord.js/typings/index.d.ts",
         "../src/db.ts"
       ],
+      "../src/listeners/guilds/memberremove.ts": [
+        "../node_modules/date-fns/typings.d.ts",
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts",
+        "../src/config.ts",
+        "../src/db.ts"
+      ],
       "../src/listeners/guilds/memeberadd.ts": [
         "../node_modules/date-fns/typings.d.ts",
         "../node_modules/discord-akairo/src/index.d.ts",
@@ -1621,6 +1633,10 @@
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
+      "../src/listeners/guilds/memberremove.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
       "../src/listeners/guilds/memeberadd.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
@@ -1740,6 +1756,7 @@
       "../src/listeners/client/ready.ts",
       "../src/listeners/command/cooldown.ts",
       "../src/listeners/command/finnishlistener.ts",
+      "../src/listeners/guilds/memberremove.ts",
       "../src/listeners/guilds/memeberadd.ts"
     ]
   },
