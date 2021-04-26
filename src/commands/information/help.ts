@@ -10,7 +10,6 @@ export default class helpCommand extends Command {
         content: "Helps you out with any command",
         usage: "help <command>",
         examples: ["links", "help ping"],
-        Permissions: "Ban members or moderator role!"
       },
       ratelimit: 3,
       args: [
@@ -56,7 +55,10 @@ export default class helpCommand extends Command {
       );
 
       if (command.description.Permissions) {
-        commandEmbed.addField("Permissions:", `${command.description.Permissions}`);
+        commandEmbed.addField(
+          "Permissions:",
+          `${command.description.Permissions}`
+        );
       }
 
       return message.util.send(commandEmbed);
