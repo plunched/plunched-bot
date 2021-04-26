@@ -10,6 +10,7 @@ export default class helpCommand extends Command {
         content: "Helps you out with any command",
         usage: "help <command>",
         examples: ["links", "help ping"],
+        Permissions: "Ban members or moderator role!"
       },
       ratelimit: 3,
       args: [
@@ -26,26 +27,39 @@ export default class helpCommand extends Command {
     { command }: { command: Command }
   ): Promise<Message> {
     if (command) {
-      if (!command.description.content)
-        return message.util.send(
-          new MessageEmbed().setTitle("no command found")
+      let commandEmbed = new MessageEmbed()
+        .setTitle(`Help ${command}`)
+        .setColor(this.client.colors.default)
+        .addField(
+          "Usage:",
+          `\`${command.description.usage || "No usage provide."}\``
         );
-      return message.util.send(
-        new MessageEmbed()
-          .setTitle(`Help ${command}`)
-          .setDescription(
-            `\n${command.description.content || "No description provided."}
 
-      **usage:**\n\`${command.description.usage || "No usage provide."}\`
+      if (command.userPermissions) {
+        commandEmbed.addField(
+          "Examples:",
+          `\`${
+            command.description.examples
+              ? command.description.examples.map((e) => `${e}`).join("\n")
+              : "no examples provided."
+          }\``
+        );
+      }
 
-      **examples:**\n\`${
-        command.description.examples
-          ? command.description.examples.map((e) => `${e}`).join("\n")
-          : "No examples provided."
-      }\``
-          )
-          .setColor(this.client.colors.default)
+      commandEmbed.addField(
+        "Aliases:",
+        `\`${
+          command.aliases
+            ? command.aliases.map((e) => `${e}`).join(", ")
+            : "no examples provided."
+        }\``
       );
+
+      if (command.description.Permissions) {
+        commandEmbed.addField("Permissions:", `${command.description.Permissions}`);
+      }
+
+      return message.util.send(commandEmbed);
     }
 
     const embed = new MessageEmbed()

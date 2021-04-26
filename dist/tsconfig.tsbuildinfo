@@ -272,7 +272,7 @@
         "affectsGlobalScope": false
       },
       "../src/commands/information/help.ts": {
-        "version": "089e77b4576261d9fdab4ef161e6de0367f4897b1d28c928a07dfdf7c926dcbf",
+        "version": "a0166bfce98ec8ffe516c4e7dc3a9303f913d0342b04ac853a9a6494a63dd131",
         "signature": "9aed120a0b6958465821eff9e41923786c7cec5fce9fe6718797186184a3ad23",
         "affectsGlobalScope": false
       },
@@ -307,7 +307,7 @@
         "affectsGlobalScope": false
       },
       "../src/commands/moderation/ban.ts": {
-        "version": "0c9b721a52affcb5991833288856b65a5fc2d55b9df2079871b681052c5feb56",
+        "version": "d80b2bc4741660d89ca789aba095502ec22ccdfb96d1829ee06dfa1d7ad47c53",
         "signature": "ec71b0878beccb509b668cccdc117efba5e06ae1032429140bb6dd4d163f1d17",
         "affectsGlobalScope": false
       },

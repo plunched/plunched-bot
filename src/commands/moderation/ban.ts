@@ -15,6 +15,7 @@ export default class banCommand extends Command {
           "ban user#0001 spamming NSFW",
           "ban userID spamming NSFW",
         ],
+        Permissions: "Ban members or moderator role!",
       },
       args: [
         {
@@ -35,6 +36,7 @@ export default class banCommand extends Command {
           default: "No reason provided",
         },
       ],
+      userPermissions: "BAN_MEMBERS",
     });
   }
 
