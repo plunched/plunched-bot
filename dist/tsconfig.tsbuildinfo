@@ -272,7 +272,7 @@
         "affectsGlobalScope": false
       },
       "../src/commands/information/help.ts": {
-        "version": "80b9806f5d9891ced97ea3ddf38ad8621b95ee8d8303c440dcef980bc0f4c2db",
+        "version": "089e77b4576261d9fdab4ef161e6de0367f4897b1d28c928a07dfdf7c926dcbf",
         "signature": "9aed120a0b6958465821eff9e41923786c7cec5fce9fe6718797186184a3ad23",
         "affectsGlobalScope": false
       },
@@ -596,6 +596,7 @@
       "esModuleInterop": true,
       "experimentalDecorators": false,
       "emitDecoratorMetadata": false,
+      "watch": true,
       "configFilePath": "../tsconfig.json"
     },
     "referencedMap": {
