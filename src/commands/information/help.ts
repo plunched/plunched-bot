@@ -8,7 +8,7 @@ export default class helpCommand extends Command {
       category: "information",
       description: {
         content: "Helps you out with any command",
-        usage: "help <command | sub-module>",
+        usage: "help <command>",
         examples: ["links", "help ping"],
       },
       ratelimit: 3,
@@ -25,76 +25,79 @@ export default class helpCommand extends Command {
     message: Message,
     { command }: { command: Command }
   ): Promise<Message> {
-    if (command)
-      return message.util.send(
-        new MessageEmbed()
-          .setTitle(`Help ${command}`)
-          .setDescription(
-            `\n${command.description.content || "No description provided."}
+    if (command) {
+      let commandEmbed = new MessageEmbed()
+        .setTitle(`Help ${command}`)
+        .setColor(this.client.colors.default)
+        .addField(
+          "Usage:",
+          `\`${command.description.usage || "No usage provide."}\``
+        );
 
-      **usage:**\n\`${command.description.usage || "No usage provide."}\`
+      if (command.description.examples) {
+        commandEmbed.addField(
+          "Examples:",
+          `\`${
+            command.description.examples
+              ? command.description.examples.map((e) => `${e}`).join("\n")
+              : "no examples provided."
+          }\``
+        );
+      }
 
-      **examples:**\n\`${
-        command.description.examples
-          ? command.description.examples.map((e) => `${e}`).join("\n")
-          : "No examples provided."
-      }\``
-          )
-          .setColor(this.client.colors.default)
+      commandEmbed.addField(
+        "Aliases:",
+        `\`${
+          command.aliases
+            ? command.aliases.map((e) => `${e}`).join(", ")
+            : "no examples provided."
+        }\``
       );
 
-    return message.util.send(
-      new MessageEmbed()
-        .setTitle("Help")
-        .setDescription(
-          `**usage:**\n\`${message.util.parsed.prefix}${this.description.usage}\``
-        )
-        .addFields(
-          {
-            name: "moderation",
-            value: `moderation commands are used to 'correct' members of a server.`,
-            inline: true,
-          },
-          {
-            name: "auto-mod",
-            value: `auto-moderation commands are used to automate moderation.`,
-            inline: true,
-          },
-          {
-            name: "info",
-            value: `info commands are used to get information about anything.`,
-            inline: true,
-          },
-          {
-            name: "economy",
-            value: `economy commands are used to gain coins and items.`,
-            inline: true,
-          },
-          {
-            name: "trivia/fun",
-            value: `trivia commands are used to do thing things which amuses people.`,
-            inline: true,
-          },
-          {
-            name: "config",
-            value: `config commands are used to set up bot settings for this server.`,
-            inline: true,
-          },
-          {
-            name: "\u200b",
-            value:
-              "[support server](https://discord.gg/pdqxpzavpy) | [add bot](https://discord.com/api/oauth2/authorize?client_id=806242381866205195&permissions=2147483647&scope=bot) | [vote here](https://discordbotlist.com/bots/plunched-bot/upvote)",
-          }
-        )
-    );
+      if (command.description.Permissions) {
+        commandEmbed.addField(
+          "Permissions:",
+          `${command.description.Permissions}`
+        );
+      }
 
-    return message.util.send(
-      new MessageEmbed()
-        .setTitle(`No command found`)
-        .setDescription(
-          `${this.client.emotes.error} Could not find the command \`${command}\``
-        )
-        .setColor(this.client.colors.default)
-    );
+      commandEmbed.addField(
+        "\u200b",
+        `[support server](https://discord.gg/pDqXpZAVPY) | [add bot](https://discord.com/api/oauth2/authorize?client_id=806242381866205195&permissions=2147483647&scope=bot) | [vote here](https://discordbotlist.com/bots/plunched-bot/upvote)`
+      );
+
+      return message.util.send(commandEmbed);
+    }
+
+    const embed = new MessageEmbed()
+      .setAuthor(
+        message.member.user.tag,
+        message.author.displayAvatarURL({ dynamic: true })
+      )
+      .setTitle("Help command.")
+      .setDescription(
+        `**usage:** \`${message.util.parsed.prefix}${this.description.usage}\``
+      )
+      .setColor(this.client.colors.default)
+      .setTimestamp()
+      .setFooter(this.client.user.tag, this.client.user.displayAvatarURL());
+
+    for (const category of this.handler.categories.values()) {
+      if (["default"].includes(category.id)) continue;
+
+      embed.addField(
+        category.id,
+        category
+          .filter((cmd) => cmd.aliases.length > 0)
+          .map((cmd) => `\`${cmd}\``)
+          .join(", " || "No commands in category.")
+      );
+    }
+
+    embed.addField("\u200b",
+        `[support server](https://discord.gg/pDqXpZAVPY) | [add bot](https://discord.com/api/oauth2/authorize?client_id=806242381866205195&permissions=2147483647&scope=bot) | [vote here](https://discordbotlist.com/bots/plunched-bot/upvote)`
+      )
+
+    return message.channel.send(embed);
   }
 }

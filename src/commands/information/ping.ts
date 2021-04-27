@@ -1,10 +1,11 @@
 import { Command } from "discord-akairo";
 import { Message, MessageEmbed } from "discord.js";
-import guild from "../../client/guilds";
+import { prefix } from "../../config";
+import { pool } from "../../db";
 
 export default class pingCommand extends Command {
   constructor() {
-    super("pingCommand", {
+    super("ping", {
       aliases: ["ping"],
       category: "information",
       description: {
@@ -22,7 +23,14 @@ export default class pingCommand extends Command {
     );
 
     const preDate = Date.now();
-    await guild.fetch(message.guild.id, message.guild.name, message.author.id);
+    await pool.query(
+      "INSERT INTO guilds (guildID, guildName, prefixes, totalCommands) VALUES($1, $2, $3, $4) ON CONFLICT DO NOTHING",
+      [message.guild.id, message.guild.name, prefix, 0]
+    );
+    await pool.query(
+      "INSERT INTO users (userID, cash, bank) VALUES($1, $2, $2) ON CONFLICT DO NOTHING",
+      [message.author.id, 0]
+    );
     const dbPing = Date.now() - preDate;
 
     return (await pingMessage).edit(
