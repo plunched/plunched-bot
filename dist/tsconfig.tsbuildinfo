@@ -487,12 +487,12 @@
         "affectsGlobalScope": false
       },
       "../src/client/botclient.ts": {
-        "version": "ecd4eff38a055c7e63e0e380b5c5b09318115bb07fcef4e854be30902e320ff0",
+        "version": "57e5465df06b90f5adca62f14af6c8f70ee3ed868a2292a6783b91a026d08160",
         "signature": "3a9926668a4ae6a1b92eedd3388766ae5f0c6ff624bed3de1335488d6c28bd0f",
         "affectsGlobalScope": false
       },
       "../src/bot.ts": {
-        "version": "64aa7831c80119bbeccd320dc2543430e697e360bfb6edbf3f35bb43264ca850",
+        "version": "5017ac61658cdfca70c623617afc2f529caa2110f5a88ae50fcd98ae9d2b0f9a",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
         "affectsGlobalScope": false
       },
@@ -1829,30 +1829,7 @@
       "../node_modules/pg-protocol/dist/messages.d.ts",
       "../node_modules/pg-types/index.d.ts",
       "../src/bot.ts",
-      [
-        "../src/client/botclient.ts",
-        [
-          {
-            "file": "../src/client/botclient.ts",
-            "start": 2290,
-            "length": 33,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type '{ ownerID: string | string[]; intents: Intents; }' is not assignable to parameter of type 'AkairoOptions & ClientOptions'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Object literal may only specify known properties, and 'intents' does not exist in type 'AkairoOptions & ClientOptions'.",
-                  "category": 1,
-                  "code": 2353
-                }
-              ]
-            }
-          }
-        ]
-      ],
+      "../src/client/botclient.ts",
       "../src/commands/economy/work.ts",
       "../src/commands/information/botinfo.ts",
       "../src/commands/information/botinvite.ts",

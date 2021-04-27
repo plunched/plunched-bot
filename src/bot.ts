@@ -7,8 +7,9 @@ client.start();
 
 const db = async () => {
   const db = await pool.query("SELECT * FROM guilds LIMIT 10");
-  if (db) return console.log("connected to postgresql");
-  console.error("Failed to connect ot postgres db!")
+  const user = await pool.query("SELECT * FROM users LIMIT 10");
+  if (db && user) return console.log("connected to postgresql");
+  console.error("Failed to connect ot postgres db!");
 };
 
 db();
