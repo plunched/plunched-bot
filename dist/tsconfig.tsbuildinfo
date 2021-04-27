@@ -217,8 +217,8 @@
         "affectsGlobalScope": true
       },
       "../src/config.ts": {
-        "version": "d1b1a82bfdcd1003e29e2b91f4dd782453bd79e2aedd2a825dba4c2c5d8c6623",
-        "signature": "6eb7c2392843473649a798aae962e5a07f3f8fe82a108d4302c849f0845e52c4",
+        "version": "61e94cbfee4f2530b5647606d9127db297a4b3037da804b799d12db76ecf3108",
+        "signature": "110ef01b23efc55d5b52657db63708909f12619c50f39491d5130878a30595a9",
         "affectsGlobalScope": false
       },
       "../node_modules/@discordjs/collection/dist/index.d.ts": {
@@ -227,8 +227,8 @@
         "affectsGlobalScope": false
       },
       "../node_modules/discord.js/typings/index.d.ts": {
-        "version": "00968e6edbcacb824cfb3a2027b4b310232025b505b0aa18ed6f0b13d035bc01",
-        "signature": "00968e6edbcacb824cfb3a2027b4b310232025b505b0aa18ed6f0b13d035bc01",
+        "version": "aeda50ab46114a68c427c962f6ccce1a6ac74f6ab03f684e4f59dbf3c4f56d2c",
+        "signature": "aeda50ab46114a68c427c962f6ccce1a6ac74f6ab03f684e4f59dbf3c4f56d2c",
         "affectsGlobalScope": true
       },
       "../node_modules/discord-akairo/src/index.d.ts": {
@@ -236,109 +236,9 @@
         "signature": "cb2a7eac053556da539ac76159bbafbeb72b5a7c61a5f3d510ba16ffe27e0333",
         "affectsGlobalScope": false
       },
-      "../src/db.ts": {
-        "version": "6e9957caf24055b8b34a6ba7ff8ccb3972258f65f0e64658aee8fc045ea0ad11",
-        "signature": "83141ad9c1ca73e0d10894b9cba5b88691b1958e5330a5a68ed696634cfc731c",
-        "affectsGlobalScope": false
-      },
-      "../src/client/botclient.ts": {
-        "version": "44f5329891c7b361069f47b8298ffb56b6779b3afb0c3e4868f66a2c0af018d2",
-        "signature": "f863e86c13cfb89040f8f02ecc6b519d7c880840c8d2f92c4a2bdb5a9fbd6a86",
-        "affectsGlobalScope": false
-      },
-      "../src/bot.ts": {
-        "version": "64aa7831c80119bbeccd320dc2543430e697e360bfb6edbf3f35bb43264ca850",
-        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
-        "affectsGlobalScope": false
-      },
-      "../src/client/guilds.ts": {
-        "version": "48babc4843aa8826a574df80dc46831b9fc3cbc63d3638fbd609609346b8b981",
-        "signature": "2c16cce2b7cc5fa5c05550a168feebba2048884e99501ecd8470d6d66afa7c7a",
-        "affectsGlobalScope": false
-      },
-      "../src/commands/information/botinvite.ts": {
-        "version": "ee221809279a0cc13313c388ed5de5b484df633c995fe2fc92c30592644eed97",
-        "signature": "df322b3ce2947d53a993d54915eac9bf999b8061c064195a209c3f740f3c1f4d",
-        "affectsGlobalScope": false
-      },
-      "../src/commands/information/botvote.ts": {
-        "version": "493bb1f9b0fd2b87fed7d7edd01a8518304bc8043bf6cfd182c45bde9b4ab0f4",
-        "signature": "c20973bc33f55060ef065eb6acf5df0acb98fc322bf84d1aea1ad06ed6eca207",
-        "affectsGlobalScope": false
-      },
-      "../src/commands/information/botinfo.ts": {
-        "version": "443bcbce4b168fd05d24a559260479af3558358098a1e9510e54c1138f59b3e3",
-        "signature": "da834ce79766b09cfe41be55a79f05e080818af5495fd94c5933894edd2f2dd9",
-        "affectsGlobalScope": false
-      },
-      "../src/commands/information/help.ts": {
-        "version": "80b9806f5d9891ced97ea3ddf38ad8621b95ee8d8303c440dcef980bc0f4c2db",
-        "signature": "9aed120a0b6958465821eff9e41923786c7cec5fce9fe6718797186184a3ad23",
-        "affectsGlobalScope": false
-      },
-      "../src/commands/information/links.ts": {
-        "version": "6a6dee2c98ed9c9c110da560c263ce561e3e4b214ca4ec2a9ade39343344c085",
-        "signature": "fb2644cbbe682d67e45a55502bfa8ee61f0cae4c67e2cffa33d3a445a1ea7db2",
-        "affectsGlobalScope": false
-      },
-      "../src/commands/information/ping.ts": {
-        "version": "5e0dfa4902def65436fdb12a8a9057fff3405c2e8b849b7fd8882f7e66a7afe7",
-        "signature": "16644a0d23cf8e57d463a6419150b2f0162c637159666d8dea733d350a63abdd",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/date-fns/typings.d.ts": {
-        "version": "7ad8a941b63580395b951f33afb7b4fb6e6b6e11502b48c1fbf3b9051e58b80f",
-        "signature": "7ad8a941b63580395b951f33afb7b4fb6e6b6e11502b48c1fbf3b9051e58b80f",
-        "affectsGlobalScope": true
-      },
-      "../src/commands/information/serverinfo.ts": {
-        "version": "5d7290ab55772dbb2884f32f4705378e82dfdb38b076bb6333d76f0d8c853cea",
-        "signature": "d101153df8298faf01e92741e1ccc0983b4b14363d4177960a2d7f2d9a7fcbb3",
-        "affectsGlobalScope": false
-      },
-      "../src/commands/information/servermembers.ts": {
-        "version": "096f478fbe99a0c3dcb30aa5e5c5074a8ce0880e800ecf353cd257acd0621e73",
-        "signature": "f7ad77c4b5c86dd269b4f2f0f4aca0aed5519f93cb01f14f9d57dd983eba348f",
-        "affectsGlobalScope": false
-      },
-      "../src/commands/information/uptime.ts": {
-        "version": "4c17e1c7df6a31466790982a968fd21ae7db589d14e7521b843b9295a02f9a64",
-        "signature": "7023283686e921399ebe0678f7d02b4a3c67ea1e0bfc16c100c7a6cca154ca14",
-        "affectsGlobalScope": false
-      },
-      "../src/commands/moderation/ban.ts": {
-        "version": "0c9b721a52affcb5991833288856b65a5fc2d55b9df2079871b681052c5feb56",
-        "signature": "ec71b0878beccb509b668cccdc117efba5e06ae1032429140bb6dd4d163f1d17",
-        "affectsGlobalScope": false
-      },
-      "../src/commands/trivia/8ball.ts": {
-        "version": "414ca74f84ddbcdce596b2fb2f9566597828fb3d9f0f7e536465ea55208cb1b6",
-        "signature": "9bcb03d40cc829a06b4e197feac035115a8e23bb55fcc7452ee18722f377bd3e",
-        "affectsGlobalScope": false
-      },
-      "../src/commands/trivia/avatar.ts": {
-        "version": "77080dbdc2324ae4354ad7520317c4eafcd0ac2739ccc18394c3821ee873e1e7",
-        "signature": "56c5ece37261e8aed386745162a06d753b37432260e02d05f72f38e69603b7dd",
-        "affectsGlobalScope": false
-      },
-      "../src/listeners/client/ready.ts": {
-        "version": "569d7b34ebdcbf1668a2e8353799805708cfebc444f9531a86cc0bef6aed5b83",
-        "signature": "029c68368fe4e44c6450549ddb0f4bf94392ea68a9c6d5238e874abedc44a1ba",
-        "affectsGlobalScope": false
-      },
-      "../src/listeners/commandlistener/finnishlistener.ts": {
-        "version": "b42dc5b8c40a99303e5834bd44dcbfc4647fb86e49fbb8dbc4c44b33e514ffe8",
-        "signature": "c81028f7bfb28e0d9582ed78b016a9dae55e2121c485b8f86f7adf844261b529",
-        "affectsGlobalScope": false
-      },
-      "../src/listeners/commandlistener/cooldown.ts": {
-        "version": "9a23f7853c5e246803e6fdeeac78c282eed696e988f0658d0972ee9a9af57d6f",
-        "signature": "84bac23b6deced06089546bc2755d955fe013b106d0d501699aa3f713e887692",
-        "affectsGlobalScope": false
-      },
       "../node_modules/@types/node/globals.d.ts": {
-        "version": "95f6551128e2ac672b049e4d3540103c2b24ac19b6346115409e5b46efeaad86",
-        "signature": "95f6551128e2ac672b049e4d3540103c2b24ac19b6346115409e5b46efeaad86",
+        "version": "242c1382745c8f6792c06d2ac9586ee75034d43a78179f370ee1715e1a2a8556",
+        "signature": "242c1382745c8f6792c06d2ac9586ee75034d43a78179f370ee1715e1a2a8556",
         "affectsGlobalScope": true
       },
       "../node_modules/@types/node/async_hooks.d.ts": {
@@ -407,8 +307,8 @@
         "affectsGlobalScope": false
       },
       "../node_modules/@types/node/http.d.ts": {
-        "version": "1996a8b69ac0e439c14bf9077ccc29689b928ad7294095abd8e0b51858af2b39",
-        "signature": "1996a8b69ac0e439c14bf9077ccc29689b928ad7294095abd8e0b51858af2b39",
+        "version": "b58f2809eeec85e0a83df60010313d3fa3321aa4cf01cc6329785beebd5a36a0",
+        "signature": "b58f2809eeec85e0a83df60010313d3fa3321aa4cf01cc6329785beebd5a36a0",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/node/http2.d.ts": {
@@ -452,8 +352,8 @@
         "affectsGlobalScope": false
       },
       "../node_modules/@types/node/process.d.ts": {
-        "version": "1077d42e5961d19715aca12e4adefc5b31266c81c0a45b263f552d11d3365d3c",
-        "signature": "1077d42e5961d19715aca12e4adefc5b31266c81c0a45b263f552d11d3365d3c",
+        "version": "ad431ffa36a8ece42cdd4cdf6f1c01ce335951e433d523809ce0eb1707143581",
+        "signature": "ad431ffa36a8ece42cdd4cdf6f1c01ce335951e433d523809ce0eb1707143581",
         "affectsGlobalScope": true
       },
       "../node_modules/@types/node/punycode.d.ts": {
@@ -477,8 +377,8 @@
         "affectsGlobalScope": false
       },
       "../node_modules/@types/node/stream.d.ts": {
-        "version": "27fd388bf8e492acfc4348099d53fb22c3f2e46b4f9021b708f5683bf9b5e4e9",
-        "signature": "27fd388bf8e492acfc4348099d53fb22c3f2e46b4f9021b708f5683bf9b5e4e9",
+        "version": "c471bef852b5bba362e7d953b9d0550681b8f3ea629a3537e98f0f74454a89dd",
+        "signature": "c471bef852b5bba362e7d953b9d0550681b8f3ea629a3537e98f0f74454a89dd",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/node/string_decoder.d.ts": {
@@ -562,8 +462,143 @@
         "affectsGlobalScope": false
       },
       "../node_modules/@types/node/index.d.ts": {
-        "version": "fed7d78fe283edb0be2ba0d83d28552db7e5b6fb418b5a9ebc12ca7b4ee7d854",
-        "signature": "fed7d78fe283edb0be2ba0d83d28552db7e5b6fb418b5a9ebc12ca7b4ee7d854",
+        "version": "86eb84db1db1fe61c58a4cb6770ce0a71babdabc56a812a0c83d24fd4647206b",
+        "signature": "86eb84db1db1fe61c58a4cb6770ce0a71babdabc56a812a0c83d24fd4647206b",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/pg-types/index.d.ts": {
+        "version": "f60e3e3060207ac982da13363181fd7ee4beecc19a7c569f0d6bb034331066c2",
+        "signature": "f60e3e3060207ac982da13363181fd7ee4beecc19a7c569f0d6bb034331066c2",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/pg-protocol/dist/messages.d.ts": {
+        "version": "17230b34bb564a3a2e36f9d3985372ccab4ad1722df2c43f7c5c2b553f68e5db",
+        "signature": "17230b34bb564a3a2e36f9d3985372ccab4ad1722df2c43f7c5c2b553f68e5db",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/pg/index.d.ts": {
+        "version": "f448497ebda7c0f667e2bc2dc5d4355d12fc60f85623d94ed3a9bf533195dee3",
+        "signature": "f448497ebda7c0f667e2bc2dc5d4355d12fc60f85623d94ed3a9bf533195dee3",
+        "affectsGlobalScope": false
+      },
+      "../src/db.ts": {
+        "version": "6e9957caf24055b8b34a6ba7ff8ccb3972258f65f0e64658aee8fc045ea0ad11",
+        "signature": "a6e4dfe0c60d8003028da5ada575dd9935c11015d36e2b80e12d14dbaf1f59bf",
+        "affectsGlobalScope": false
+      },
+      "../src/client/botclient.ts": {
+        "version": "57e5465df06b90f5adca62f14af6c8f70ee3ed868a2292a6783b91a026d08160",
+        "signature": "3a9926668a4ae6a1b92eedd3388766ae5f0c6ff624bed3de1335488d6c28bd0f",
+        "affectsGlobalScope": false
+      },
+      "../src/bot.ts": {
+        "version": "5017ac61658cdfca70c623617afc2f529caa2110f5a88ae50fcd98ae9d2b0f9a",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
+        "affectsGlobalScope": false
+      },
+      "../src/commands/economy/work.ts": {
+        "version": "5ad731d16d7de2b7b53491afcd390a30b151a3fc10df760629fa53655684077b",
+        "signature": "3d92e9593d60e85f15db5d2aabf8bb3443c9c1f44fd6771bd515d086eb9593bc",
+        "affectsGlobalScope": false
+      },
+      "../src/commands/information/botinvite.ts": {
+        "version": "ee221809279a0cc13313c388ed5de5b484df633c995fe2fc92c30592644eed97",
+        "signature": "df322b3ce2947d53a993d54915eac9bf999b8061c064195a209c3f740f3c1f4d",
+        "affectsGlobalScope": false
+      },
+      "../src/commands/information/botvote.ts": {
+        "version": "493bb1f9b0fd2b87fed7d7edd01a8518304bc8043bf6cfd182c45bde9b4ab0f4",
+        "signature": "c20973bc33f55060ef065eb6acf5df0acb98fc322bf84d1aea1ad06ed6eca207",
+        "affectsGlobalScope": false
+      },
+      "../src/commands/information/botinfo.ts": {
+        "version": "cb9a22ec323a9ccab711351526c69d56a8cf93d04e058baba77b2ad6e467bd01",
+        "signature": "da834ce79766b09cfe41be55a79f05e080818af5495fd94c5933894edd2f2dd9",
+        "affectsGlobalScope": false
+      },
+      "../src/commands/information/help.ts": {
+        "version": "260e313379db3f97b565cb8d8fa988f06331b6c98c8ed064f55ac67a6e1eb321",
+        "signature": "9aed120a0b6958465821eff9e41923786c7cec5fce9fe6718797186184a3ad23",
+        "affectsGlobalScope": false
+      },
+      "../src/commands/information/links.ts": {
+        "version": "6a6dee2c98ed9c9c110da560c263ce561e3e4b214ca4ec2a9ade39343344c085",
+        "signature": "fb2644cbbe682d67e45a55502bfa8ee61f0cae4c67e2cffa33d3a445a1ea7db2",
+        "affectsGlobalScope": false
+      },
+      "../src/commands/information/ping.ts": {
+        "version": "5685ef85eee193a94516292b72a1e26034448f93bf9f7bca321599b386505c9e",
+        "signature": "16644a0d23cf8e57d463a6419150b2f0162c637159666d8dea733d350a63abdd",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/date-fns/typings.d.ts": {
+        "version": "7ad8a941b63580395b951f33afb7b4fb6e6b6e11502b48c1fbf3b9051e58b80f",
+        "signature": "7ad8a941b63580395b951f33afb7b4fb6e6b6e11502b48c1fbf3b9051e58b80f",
+        "affectsGlobalScope": true
+      },
+      "../src/commands/information/serverinfo.ts": {
+        "version": "5d7290ab55772dbb2884f32f4705378e82dfdb38b076bb6333d76f0d8c853cea",
+        "signature": "d101153df8298faf01e92741e1ccc0983b4b14363d4177960a2d7f2d9a7fcbb3",
+        "affectsGlobalScope": false
+      },
+      "../src/commands/information/servermembers.ts": {
+        "version": "096f478fbe99a0c3dcb30aa5e5c5074a8ce0880e800ecf353cd257acd0621e73",
+        "signature": "f7ad77c4b5c86dd269b4f2f0f4aca0aed5519f93cb01f14f9d57dd983eba348f",
+        "affectsGlobalScope": false
+      },
+      "../src/commands/information/uptime.ts": {
+        "version": "4c17e1c7df6a31466790982a968fd21ae7db589d14e7521b843b9295a02f9a64",
+        "signature": "7023283686e921399ebe0678f7d02b4a3c67ea1e0bfc16c100c7a6cca154ca14",
+        "affectsGlobalScope": false
+      },
+      "../src/commands/moderation/ban.ts": {
+        "version": "d80b2bc4741660d89ca789aba095502ec22ccdfb96d1829ee06dfa1d7ad47c53",
+        "signature": "ec71b0878beccb509b668cccdc117efba5e06ae1032429140bb6dd4d163f1d17",
+        "affectsGlobalScope": false
+      },
+      "../src/commands/trivia/8ball.ts": {
+        "version": "414ca74f84ddbcdce596b2fb2f9566597828fb3d9f0f7e536465ea55208cb1b6",
+        "signature": "9bcb03d40cc829a06b4e197feac035115a8e23bb55fcc7452ee18722f377bd3e",
+        "affectsGlobalScope": false
+      },
+      "../src/commands/trivia/avatar.ts": {
+        "version": "77080dbdc2324ae4354ad7520317c4eafcd0ac2739ccc18394c3821ee873e1e7",
+        "signature": "56c5ece37261e8aed386745162a06d753b37432260e02d05f72f38e69603b7dd",
+        "affectsGlobalScope": false
+      },
+      "../src/commands/trivia/meme.ts": {
+        "version": "92159b708db5629f4c72850dfcaa34e9bf6dd643089ac6842fcf5082a41738ba",
+        "signature": "82bc1557c2bb5c5dc0a19bd1e29fe3e657a06c8f64b821669f2375ab64996219",
+        "affectsGlobalScope": false
+      },
+      "../src/commands/trivia/say.ts": {
+        "version": "60f8a938b41cf993233f7ecdfb0c6021e4dc426a3b0a90f21defbd5902564c25",
+        "signature": "450ea0d2853c0bd017f0dd6aecafbf33a880af3eb85c693093d3575764a894f7",
+        "affectsGlobalScope": false
+      },
+      "../src/listeners/client/ready.ts": {
+        "version": "569d7b34ebdcbf1668a2e8353799805708cfebc444f9531a86cc0bef6aed5b83",
+        "signature": "029c68368fe4e44c6450549ddb0f4bf94392ea68a9c6d5238e874abedc44a1ba",
+        "affectsGlobalScope": false
+      },
+      "../src/listeners/command/finnishlistener.ts": {
+        "version": "b42dc5b8c40a99303e5834bd44dcbfc4647fb86e49fbb8dbc4c44b33e514ffe8",
+        "signature": "c81028f7bfb28e0d9582ed78b016a9dae55e2121c485b8f86f7adf844261b529",
+        "affectsGlobalScope": false
+      },
+      "../src/listeners/command/cooldown.ts": {
+        "version": "c8882fc7457cd9e28faa69dcaf4f9a2cb71cdb0b7bbf9804f64570ae3fd16b7b",
+        "signature": "84bac23b6deced06089546bc2755d955fe013b106d0d501699aa3f713e887692",
+        "affectsGlobalScope": false
+      },
+      "../src/listeners/guilds/memberremove.ts": {
+        "version": "d74c54308ee990b6d1adbd0ea61196109768929348744ea150f6e24b8b4258c9",
+        "signature": "f1797b8a0f50f6e88338228ce66c4c6244af5c962789bdabe0be4e689136e68b",
+        "affectsGlobalScope": false
+      },
+      "../src/listeners/guilds/memeberadd.ts": {
+        "version": "a30465db247d1edad3c39ab12e8753397dd77cc68b3f7fa721fbdbfc4fd21229",
+        "signature": "f1797b8a0f50f6e88338228ce66c4c6244af5c962789bdabe0be4e689136e68b",
         "affectsGlobalScope": false
       }
     },
@@ -1000,6 +1035,16 @@
         "../node_modules/@types/node/zlib.d.ts",
         "../node_modules/date-fns/typings.d.ts"
       ],
+      "../node_modules/@types/pg/index.d.ts": [
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/index.d.ts",
+        "../node_modules/@types/node/stream.d.ts",
+        "../node_modules/@types/node/tls.d.ts",
+        "../node_modules/@types/pg/index.d.ts",
+        "../node_modules/date-fns/typings.d.ts",
+        "../node_modules/pg-protocol/dist/messages.d.ts",
+        "../node_modules/pg-types/index.d.ts"
+      ],
       "../node_modules/date-fns/typings.d.ts": [
         "../node_modules/date-fns/typings.d.ts"
       ],
@@ -1017,6 +1062,13 @@
         "../node_modules/@types/node/stream.d.ts",
         "../node_modules/date-fns/typings.d.ts"
       ],
+      "../node_modules/pg-protocol/dist/messages.d.ts": [
+        "../node_modules/@types/node/index.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../node_modules/pg-types/index.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
       "../src/bot.ts": [
         "../node_modules/date-fns/typings.d.ts",
         "../src/client/botclient.ts",
@@ -1031,8 +1083,10 @@
         "../src/config.ts",
         "../src/db.ts"
       ],
-      "../src/client/guilds.ts": [
+      "../src/commands/economy/work.ts": [
         "../node_modules/date-fns/typings.d.ts",
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts",
         "../src/db.ts"
       ],
       "../src/commands/information/botinfo.ts": [
@@ -1064,7 +1118,8 @@
         "../node_modules/date-fns/typings.d.ts",
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts",
-        "../src/client/guilds.ts"
+        "../src/config.ts",
+        "../src/db.ts"
       ],
       "../src/commands/information/serverinfo.ts": [
         "../node_modules/date-fns/typings.d.ts",
@@ -1097,25 +1152,50 @@
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
+      "../src/commands/trivia/meme.ts": [
+        "../node_modules/date-fns/typings.d.ts",
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
+      "../src/commands/trivia/say.ts": [
+        "../node_modules/date-fns/typings.d.ts",
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
       "../src/config.ts": [
         "../node_modules/date-fns/typings.d.ts"
       ],
       "../src/db.ts": [
+        "../node_modules/@types/pg/index.d.ts",
         "../node_modules/date-fns/typings.d.ts"
       ],
       "../src/listeners/client/ready.ts": [
         "../node_modules/date-fns/typings.d.ts",
         "../node_modules/discord-akairo/src/index.d.ts"
       ],
-      "../src/listeners/commandlistener/cooldown.ts": [
+      "../src/listeners/command/cooldown.ts": [
         "../node_modules/date-fns/typings.d.ts",
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
-      "../src/listeners/commandlistener/finnishlistener.ts": [
+      "../src/listeners/command/finnishlistener.ts": [
         "../node_modules/date-fns/typings.d.ts",
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts",
+        "../src/db.ts"
+      ],
+      "../src/listeners/guilds/memberremove.ts": [
+        "../node_modules/date-fns/typings.d.ts",
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts",
+        "../src/config.ts",
+        "../src/db.ts"
+      ],
+      "../src/listeners/guilds/memeberadd.ts": [
+        "../node_modules/date-fns/typings.d.ts",
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts",
+        "../src/config.ts",
         "../src/db.ts"
       ]
     },
@@ -1530,6 +1610,16 @@
         "../node_modules/@types/node/zlib.d.ts",
         "../node_modules/date-fns/typings.d.ts"
       ],
+      "../node_modules/@types/pg/index.d.ts": [
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/index.d.ts",
+        "../node_modules/@types/node/stream.d.ts",
+        "../node_modules/@types/node/tls.d.ts",
+        "../node_modules/@types/pg/index.d.ts",
+        "../node_modules/date-fns/typings.d.ts",
+        "../node_modules/pg-protocol/dist/messages.d.ts",
+        "../node_modules/pg-types/index.d.ts"
+      ],
       "../node_modules/date-fns/typings.d.ts": [
         "../node_modules/date-fns/typings.d.ts"
       ],
@@ -1547,9 +1637,20 @@
         "../node_modules/@types/node/stream.d.ts",
         "../node_modules/date-fns/typings.d.ts"
       ],
+      "../node_modules/pg-protocol/dist/messages.d.ts": [
+        "../node_modules/@types/node/index.d.ts",
+        "../node_modules/date-fns/typings.d.ts"
+      ],
+      "../node_modules/pg-types/index.d.ts": [
+        "../node_modules/date-fns/typings.d.ts"
+      ],
       "../src/client/botclient.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../src/config.ts"
+      ],
+      "../src/commands/economy/work.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
       ],
       "../src/commands/information/botinfo.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
@@ -1599,14 +1700,33 @@
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
-      "../src/listeners/client/ready.ts": [
-        "../node_modules/discord-akairo/src/index.d.ts"
-      ],
-      "../src/listeners/commandlistener/cooldown.ts": [
+      "../src/commands/trivia/meme.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
-      "../src/listeners/commandlistener/finnishlistener.ts": [
+      "../src/commands/trivia/say.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
+      "../src/db.ts": [
+        "../node_modules/@types/pg/index.d.ts"
+      ],
+      "../src/listeners/client/ready.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts"
+      ],
+      "../src/listeners/command/cooldown.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
+      "../src/listeners/command/finnishlistener.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
+      "../src/listeners/guilds/memberremove.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
+      "../src/listeners/guilds/memeberadd.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ]
@@ -1702,12 +1822,15 @@
       "../node_modules/@types/node/wasi.d.ts",
       "../node_modules/@types/node/worker_threads.d.ts",
       "../node_modules/@types/node/zlib.d.ts",
+      "../node_modules/@types/pg/index.d.ts",
       "../node_modules/date-fns/typings.d.ts",
       "../node_modules/discord-akairo/src/index.d.ts",
       "../node_modules/discord.js/typings/index.d.ts",
+      "../node_modules/pg-protocol/dist/messages.d.ts",
+      "../node_modules/pg-types/index.d.ts",
       "../src/bot.ts",
       "../src/client/botclient.ts",
-      "../src/client/guilds.ts",
+      "../src/commands/economy/work.ts",
       "../src/commands/information/botinfo.ts",
       "../src/commands/information/botinvite.ts",
       "../src/commands/information/botvote.ts",
@@ -1720,11 +1843,15 @@
       "../src/commands/moderation/ban.ts",
       "../src/commands/trivia/8ball.ts",
       "../src/commands/trivia/avatar.ts",
+      "../src/commands/trivia/meme.ts",
+      "../src/commands/trivia/say.ts",
       "../src/config.ts",
       "../src/db.ts",
       "../src/listeners/client/ready.ts",
-      "../src/listeners/commandlistener/cooldown.ts",
-      "../src/listeners/commandlistener/finnishlistener.ts"
+      "../src/listeners/command/cooldown.ts",
+      "../src/listeners/command/finnishlistener.ts",
+      "../src/listeners/guilds/memberremove.ts",
+      "../src/listeners/guilds/memeberadd.ts"
     ]
   },
   "version": "4.2.4"

@@ -19,7 +19,7 @@ export default class botInfoCommand extends Command {
   public exec(message: Message): Promise<Message> {
     return message.util.send(
       new MessageEmbed()
-      .setAuthor(
+        .setAuthor(
           message.member.user.tag,
           message.author.displayAvatarURL({ dynamic: true })
         )

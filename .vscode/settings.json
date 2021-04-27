@@ -134,8 +134,10 @@
         "client",
         "cmds",
         "crossred",
+        "leavechannel",
         "ratelimit",
-        "totalcommands"
+        "totalcommands",
+        "welcomechannel"
     ],
     "sqltools.connections": [
         {
