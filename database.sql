@@ -49,20 +49,20 @@ CREATE TABLE warnings(
         REFERENCES guilds (guildID)
 );
 
-CREATE TABLE users(
-    userID BIGINT PRIMARY KEY,
-    PremiumAcc BOOLEAN DEFAULT false NOT NULL,
-    job VARCHAR(100) DEFAULT garbage-colecter NOT NULL,
-    cash BIGINT NOT NULL,
-    bank BIGINT NOT NULL,
-    lastWorkCommand DATE
-);
-
 CREATE TABLE itemlist(
     itemID SERIAL PRIMARY KEY,
     itemName VARCHAR(255) NOT NULL,
     itemPrice BIGINT NOT NULL,
     itemDescription VARCHAR(255)
+);
+
+CREATE TABLE users(
+    userID BIGINT PRIMARY KEY,
+    PremiumAcc BOOLEAN DEFAULT false NOT NULL,
+    job VARCHAR(100) DEFAULT 'garbage-colecter' NOT NULL,
+    cash BIGINT NOT NULL DEFAULT 0,
+    bank BIGINT NOT NULL DEFAULT 0,
+    lastWorkCommand DATE
 );
 
 CREATE TABLE inventory(

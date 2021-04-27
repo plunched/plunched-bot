@@ -30,12 +30,12 @@ export default class BotClient extends AkairoClient {
     directory: join(__dirname, "..", "commands"),
     prefix: async (msg): Promise<string | string[]> => {
       await pool.query(
-        "INSERT INTO guilds (guildID, guildName, prefixes, totalCommands) VALUES($1, $2, $3, $4) ON CONFLICT DO NOTHING RETURNING *",
+        "INSERT INTO guilds (guildID, guildName, prefixes, totalCommands) VALUES($1, $2, $3, $4) ON CONFLICT DO NOTHING",
         [msg.guild.id, msg.guild.name, prefix, 0]
       );
 
       let guildSettings = await pool.query(
-        "SELECT * FROM guilds WHERE guildID = $1;",
+        "SELECT prefixes FROM guilds WHERE guildID = $1;",
         [msg.guild.id]
       );
       return guildSettings.rows[0].prefixes;
