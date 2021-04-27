@@ -42,7 +42,7 @@ CREATE TABLE warnings(
     caseID SERIAL,
     guildID BIGINT NOT NULL,
     userID BIGINT NOT NULL,
-    warnType VARCHAR,
+    warnType VARCHAR(100),
     reason VARCHAR(255),
     PRIMARY KEY (caseID, guildID, userID),
     FOREIGN KEY (guildID)
@@ -51,15 +51,11 @@ CREATE TABLE warnings(
 
 CREATE TABLE users(
     userID BIGINT PRIMARY KEY,
+    PremiumAcc BOOLEAN DEFAULT false NOT NULL,
+    job VARCHAR(100) DEFAULT garbage-colecter NOT NULL,
     cash BIGINT NOT NULL,
     bank BIGINT NOT NULL,
     lastWorkCommand DATE
-);
-
-CREATE TABLE inventory(
-    userID BIGINT PRIMARY KEY,
-    FOREIGN KEY (userID)
-        REFERENCES users (userID)
 );
 
 CREATE TABLE itemlist(
@@ -67,13 +63,26 @@ CREATE TABLE itemlist(
     itemName VARCHAR(255) NOT NULL,
     itemPrice BIGINT NOT NULL,
     itemDescription VARCHAR(255)
-)
+);
+
+CREATE TABLE inventory(
+    userID BIGINT,
+    itemID SERIAL,
+    itemCount BIGINT,
+    PRIMARY KEY (userID, itemID),
+    FOREIGN KEY (userID)
+        REFERENCES users (userID),
+    FOREIGN KEY (itemID)
+        REFERENCES itemlist (itemID)
+);
 
 
 DROP TABLE disabledModules;
 DROP TABLE inventory;
 DROP TABLE channels;
+DROP TABLE messages;
 DROP TABLE warnings;
 DROP TABLE roles;
 DROP TABLE users;
+DROP TABLE itemlist;
 DROP TABLE guilds;

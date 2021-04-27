@@ -5,7 +5,7 @@ import { pool } from "../../db";
 
 export default class pingCommand extends Command {
   constructor() {
-    super("pingCommand", {
+    super("ping", {
       aliases: ["ping"],
       category: "information",
       description: {

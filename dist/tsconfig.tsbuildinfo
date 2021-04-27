@@ -251,6 +251,11 @@
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
         "affectsGlobalScope": false
       },
+      "../src/commands/economy/work.ts": {
+        "version": "3bc38b60c130f032bd02a9e3346c23bba8af6a05762ef3103b8764b9c8072352",
+        "signature": "d65a4be5047f675de600601ed6ff1fa742d24730bf3fb45612041d4a926d9565",
+        "affectsGlobalScope": false
+      },
       "../src/commands/information/botinvite.ts": {
         "version": "ee221809279a0cc13313c388ed5de5b484df633c995fe2fc92c30592644eed97",
         "signature": "df322b3ce2947d53a993d54915eac9bf999b8061c064195a209c3f740f3c1f4d",
@@ -262,7 +267,7 @@
         "affectsGlobalScope": false
       },
       "../src/commands/information/botinfo.ts": {
-        "version": "443bcbce4b168fd05d24a559260479af3558358098a1e9510e54c1138f59b3e3",
+        "version": "cb9a22ec323a9ccab711351526c69d56a8cf93d04e058baba77b2ad6e467bd01",
         "signature": "da834ce79766b09cfe41be55a79f05e080818af5495fd94c5933894edd2f2dd9",
         "affectsGlobalScope": false
       },
@@ -277,7 +282,7 @@
         "affectsGlobalScope": false
       },
       "../src/commands/information/ping.ts": {
-        "version": "4d68042193382826521195e1120f03ede8b0400dfc6e9440e8a0f4cd54e574f6",
+        "version": "5685ef85eee193a94516292b72a1e26034448f93bf9f7bca321599b386505c9e",
         "signature": "16644a0d23cf8e57d463a6419150b2f0162c637159666d8dea733d350a63abdd",
         "affectsGlobalScope": false
       },
@@ -1046,6 +1051,11 @@
         "../src/config.ts",
         "../src/db.ts"
       ],
+      "../src/commands/economy/work.ts": [
+        "../node_modules/date-fns/typings.d.ts",
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
       "../src/commands/information/botinfo.ts": [
         "../node_modules/date-fns/typings.d.ts",
         "../node_modules/discord-akairo/src/index.d.ts",
@@ -1587,6 +1597,9 @@
         "../node_modules/discord-akairo/src/index.d.ts",
         "../src/config.ts"
       ],
+      "../src/commands/economy/work.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts"
+      ],
       "../src/commands/information/botinfo.ts": [
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
@@ -1759,6 +1772,7 @@
       "../node_modules/discord.js/typings/index.d.ts",
       "../src/bot.ts",
       "../src/client/botclient.ts",
+      "../src/commands/economy/work.ts",
       "../src/commands/information/botinfo.ts",
       "../src/commands/information/botinvite.ts",
       "../src/commands/information/botvote.ts",
