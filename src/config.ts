@@ -3,7 +3,8 @@ export let token: string =
 export let prefix: string | string[] = ["p.", "."];
 export let owners: string | string[] = ["531953738491887627"];
 export let colors = {
-  default: "2B30BE",
+  default: "05a38e",
+  red: "b82804",
 };
 export let emotes = {
   online: "<:online:830091620845224026>",

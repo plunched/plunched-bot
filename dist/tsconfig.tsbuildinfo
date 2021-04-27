@@ -217,8 +217,8 @@
         "affectsGlobalScope": true
       },
       "../src/config.ts": {
-        "version": "d1b1a82bfdcd1003e29e2b91f4dd782453bd79e2aedd2a825dba4c2c5d8c6623",
-        "signature": "6eb7c2392843473649a798aae962e5a07f3f8fe82a108d4302c849f0845e52c4",
+        "version": "61e94cbfee4f2530b5647606d9127db297a4b3037da804b799d12db76ecf3108",
+        "signature": "110ef01b23efc55d5b52657db63708909f12619c50f39491d5130878a30595a9",
         "affectsGlobalScope": false
       },
       "../node_modules/@discordjs/collection/dist/index.d.ts": {
@@ -243,17 +243,12 @@
       },
       "../src/client/botclient.ts": {
         "version": "7b53ec966cfed743aeb1cdd68dad0d62af5e10f289791f2126e112cf72e84804",
-        "signature": "f863e86c13cfb89040f8f02ecc6b519d7c880840c8d2f92c4a2bdb5a9fbd6a86",
+        "signature": "3a9926668a4ae6a1b92eedd3388766ae5f0c6ff624bed3de1335488d6c28bd0f",
         "affectsGlobalScope": false
       },
       "../src/bot.ts": {
         "version": "64aa7831c80119bbeccd320dc2543430e697e360bfb6edbf3f35bb43264ca850",
         "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
-        "affectsGlobalScope": false
-      },
-      "../src/client/guilds.ts": {
-        "version": "48babc4843aa8826a574df80dc46831b9fc3cbc63d3638fbd609609346b8b981",
-        "signature": "2c16cce2b7cc5fa5c05550a168feebba2048884e99501ecd8470d6d66afa7c7a",
         "affectsGlobalScope": false
       },
       "../src/commands/information/botinvite.ts": {
@@ -272,7 +267,7 @@
         "affectsGlobalScope": false
       },
       "../src/commands/information/help.ts": {
-        "version": "a0166bfce98ec8ffe516c4e7dc3a9303f913d0342b04ac853a9a6494a63dd131",
+        "version": "260e313379db3f97b565cb8d8fa988f06331b6c98c8ed064f55ac67a6e1eb321",
         "signature": "9aed120a0b6958465821eff9e41923786c7cec5fce9fe6718797186184a3ad23",
         "affectsGlobalScope": false
       },
@@ -282,7 +277,7 @@
         "affectsGlobalScope": false
       },
       "../src/commands/information/ping.ts": {
-        "version": "5e0dfa4902def65436fdb12a8a9057fff3405c2e8b849b7fd8882f7e66a7afe7",
+        "version": "4d68042193382826521195e1120f03ede8b0400dfc6e9440e8a0f4cd54e574f6",
         "signature": "16644a0d23cf8e57d463a6419150b2f0162c637159666d8dea733d350a63abdd",
         "affectsGlobalScope": false
       },
@@ -321,6 +316,16 @@
         "signature": "56c5ece37261e8aed386745162a06d753b37432260e02d05f72f38e69603b7dd",
         "affectsGlobalScope": false
       },
+      "../src/commands/trivia/meme.ts": {
+        "version": "92159b708db5629f4c72850dfcaa34e9bf6dd643089ac6842fcf5082a41738ba",
+        "signature": "82bc1557c2bb5c5dc0a19bd1e29fe3e657a06c8f64b821669f2375ab64996219",
+        "affectsGlobalScope": false
+      },
+      "../src/commands/trivia/say.ts": {
+        "version": "60f8a938b41cf993233f7ecdfb0c6021e4dc426a3b0a90f21defbd5902564c25",
+        "signature": "450ea0d2853c0bd017f0dd6aecafbf33a880af3eb85c693093d3575764a894f7",
+        "affectsGlobalScope": false
+      },
       "../src/listeners/client/ready.ts": {
         "version": "569d7b34ebdcbf1668a2e8353799805708cfebc444f9531a86cc0bef6aed5b83",
         "signature": "029c68368fe4e44c6450549ddb0f4bf94392ea68a9c6d5238e874abedc44a1ba",
@@ -332,7 +337,7 @@
         "affectsGlobalScope": false
       },
       "../src/listeners/command/cooldown.ts": {
-        "version": "9a23f7853c5e246803e6fdeeac78c282eed696e988f0658d0972ee9a9af57d6f",
+        "version": "c8882fc7457cd9e28faa69dcaf4f9a2cb71cdb0b7bbf9804f64570ae3fd16b7b",
         "signature": "84bac23b6deced06089546bc2755d955fe013b106d0d501699aa3f713e887692",
         "affectsGlobalScope": false
       },
@@ -1041,10 +1046,6 @@
         "../src/config.ts",
         "../src/db.ts"
       ],
-      "../src/client/guilds.ts": [
-        "../node_modules/date-fns/typings.d.ts",
-        "../src/db.ts"
-      ],
       "../src/commands/information/botinfo.ts": [
         "../node_modules/date-fns/typings.d.ts",
         "../node_modules/discord-akairo/src/index.d.ts",
@@ -1074,7 +1075,8 @@
         "../node_modules/date-fns/typings.d.ts",
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts",
-        "../src/client/guilds.ts"
+        "../src/config.ts",
+        "../src/db.ts"
       ],
       "../src/commands/information/serverinfo.ts": [
         "../node_modules/date-fns/typings.d.ts",
@@ -1103,6 +1105,16 @@
         "../node_modules/discord.js/typings/index.d.ts"
       ],
       "../src/commands/trivia/avatar.ts": [
+        "../node_modules/date-fns/typings.d.ts",
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
+      "../src/commands/trivia/meme.ts": [
+        "../node_modules/date-fns/typings.d.ts",
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
+      "../src/commands/trivia/say.ts": [
         "../node_modules/date-fns/typings.d.ts",
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
@@ -1623,6 +1635,14 @@
         "../node_modules/discord-akairo/src/index.d.ts",
         "../node_modules/discord.js/typings/index.d.ts"
       ],
+      "../src/commands/trivia/meme.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
+      "../src/commands/trivia/say.ts": [
+        "../node_modules/discord-akairo/src/index.d.ts",
+        "../node_modules/discord.js/typings/index.d.ts"
+      ],
       "../src/listeners/client/ready.ts": [
         "../node_modules/discord-akairo/src/index.d.ts"
       ],
@@ -1739,7 +1759,6 @@
       "../node_modules/discord.js/typings/index.d.ts",
       "../src/bot.ts",
       "../src/client/botclient.ts",
-      "../src/client/guilds.ts",
       "../src/commands/information/botinfo.ts",
       "../src/commands/information/botinvite.ts",
       "../src/commands/information/botvote.ts",
@@ -1752,6 +1771,8 @@
       "../src/commands/moderation/ban.ts",
       "../src/commands/trivia/8ball.ts",
       "../src/commands/trivia/avatar.ts",
+      "../src/commands/trivia/meme.ts",
+      "../src/commands/trivia/say.ts",
       "../src/config.ts",
       "../src/db.ts",
       "../src/listeners/client/ready.ts",

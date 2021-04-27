@@ -27,6 +27,7 @@ export default class cooldownListener extends Listener {
           `You reached the ratelimit, command available in \`${ms(remaining)}\``
         )
         .setTimestamp()
+        .setColor(this.client.colors.red)
         .setFooter(this.client.user.tag, this.client.user.displayAvatarURL())
     );
   }

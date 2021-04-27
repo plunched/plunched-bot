@@ -62,6 +62,13 @@ CREATE TABLE inventory(
         REFERENCES users (userID)
 );
 
+CREATE TABLE itemlist(
+    itemID SERIAL PRIMARY KEY,
+    itemName VARCHAR(255) NOT NULL,
+    itemPrice BIGINT NOT NULL,
+    itemDescription VARCHAR(255)
+)
+
 
 DROP TABLE disabledModules;
 DROP TABLE inventory;

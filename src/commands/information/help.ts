@@ -34,7 +34,7 @@ export default class helpCommand extends Command {
           `\`${command.description.usage || "No usage provide."}\``
         );
 
-      if (command.userPermissions) {
+      if (command.description.examples) {
         commandEmbed.addField(
           "Examples:",
           `\`${
@@ -60,6 +60,11 @@ export default class helpCommand extends Command {
           `${command.description.Permissions}`
         );
       }
+
+      commandEmbed.addField(
+        "\u200b",
+        `[support server](https://discord.gg/pDqXpZAVPY) | [add bot](https://discord.com/api/oauth2/authorize?client_id=806242381866205195&permissions=2147483647&scope=bot) | [vote here](https://discordbotlist.com/bots/plunched-bot/upvote)`
+      );
 
       return message.util.send(commandEmbed);
     }
@@ -88,6 +93,10 @@ export default class helpCommand extends Command {
           .join(", " || "No commands in category.")
       );
     }
+
+    embed.addField("\u200b",
+        `[support server](https://discord.gg/pDqXpZAVPY) | [add bot](https://discord.com/api/oauth2/authorize?client_id=806242381866205195&permissions=2147483647&scope=bot) | [vote here](https://discordbotlist.com/bots/plunched-bot/upvote)`
+      )
 
     return message.channel.send(embed);
   }
