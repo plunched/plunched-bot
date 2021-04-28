@@ -3,12 +3,20 @@ import BotClient from "./client/Botclient";
 import { pool } from "./db";
 
 const client: BotClient = new BotClient({ token, owners });
-const db = async () => {
-  const db = await pool.query("SELECT * FROM guilds LIMIT 10");
-  const user = await pool.query("SELECT * FROM users LIMIT 10");
-  if (db && user) return console.log("connected to postgresql");
-  console.error("Failed to connect ot postgres db!");
-};
-db();
 
+let retries = 5;
+const dbconnect = async () => {
+  while (retries)
+    try {
+      pool.connect();
+      break;
+    } catch (err) {
+      console.error(err);
+      retries -= 1;
+      console.log(`retries left: ${retries}`);
+      await new Promise((res) => setTimeout(res, 1e3));
+    } console.log("connect to the db!")
+};
+
+dbconnect();
 client.start();

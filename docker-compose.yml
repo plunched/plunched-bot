@@ -1,16 +1,19 @@
 version: "3.8"
-services: 
-    db:
+services:
+  pg:
     image: postgres
     environment:
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_PASSWORD: plunched-bot
       POSTGRES_USER: postgres
-      POSTGRES_DB: plunched-bot-db
+      POSTGRES_DB: plunched_bot
     volumes:
       - ./pgdata:/var/lib/postgresql/data
     ports:
-      - "5432:5432":
+      - "5432:5432"
 
-    server: 
-      image: plunched-bot
-      depends_on: db
+  bot:
+    image: plunched_bot
+    depends_on:
+      - pg
+    ports:
+      - "4000:4000"
