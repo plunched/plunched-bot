@@ -28,8 +28,8 @@ export default class pingCommand extends Command {
       [message.guild.id, message.guild.name, prefix, 0]
     );
     await pool.query(
-      "INSERT INTO users (userID, cash, bank) VALUES($1, $2, $2) ON CONFLICT DO NOTHING",
-      [message.author.id, 0]
+      "INSERT INTO users (userID, job) VALUES($1, $2) ON CONFLICT DO NOTHING",
+      [message.author.id, "garbage-collector"]
     );
     const dbPing = Date.now() - preDate;
 
