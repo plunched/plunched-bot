@@ -16,13 +16,15 @@ export default class cooldownListener extends Listener {
     command: Command,
     remaining: Date | number
   ): Promise<Message> {
+    
+
     return await message.util.send(
       new MessageEmbed()
         .setAuthor(
           message.member.user.tag,
           message.author.displayAvatarURL({ dynamic: true })
         )
-        .setTitle(`${command} is in cooldown`)
+        .setTitle(`${command} is still in cooldown`)
         .setDescription(
           `You reached the ratelimit, command available in \`${ms(remaining)}\``
         )
