@@ -59,7 +59,7 @@ CREATE TABLE itemlist(
 CREATE TABLE users(
     userID BIGINT PRIMARY KEY,
     PremiumAcc BOOLEAN DEFAULT false NOT NULL,
-    job VARCHAR(100) DEFAULT 'garbage-colecter' NOT NULL,
+    job VARCHAR(100) NOT NULL,
     cash BIGINT NOT NULL DEFAULT 0,
     bank BIGINT NOT NULL DEFAULT 0,
     lastWorkCommand DATE
