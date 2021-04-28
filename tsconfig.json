@@ -11,9 +11,9 @@
       "ESNext.Symbol",
       "DOM"
     ],
-    "noEmit": true,
     "inlineSourceMap": true,
     "inlineSources": true,
+    "incremental": true,
     "esModuleInterop": true,
     "experimentalDecorators": false,
     "emitDecoratorMetadata": false

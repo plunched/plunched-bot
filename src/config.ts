@@ -11,4 +11,5 @@ export let emotes = {
   offline: "<:offline:830091284483670046>",
   error: "<:crossred:811612083832750101>",
   check: "<:checkgreen:811612084164100136>",
+  coin: "<:discordCoin:830042375614758984>"
 };
