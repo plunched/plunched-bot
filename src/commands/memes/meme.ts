@@ -6,7 +6,7 @@ export default class memeCommand extends Command {
   constructor() {
     super("meme", {
       aliases: ["meme", "memey"],
-      category: "trivia",
+      category: "memes",
       description: {
         content: "Helps you out with any command",
         usage: "help <command>",

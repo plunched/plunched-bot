@@ -4,7 +4,8 @@ CREATE TABLE guilds(
     guildID BIGINT PRIMARY KEY,
     guildName VARCHAR(255) NOT NULL,
     prefixes VARCHAR(5) ARRAY[5] NOT NULL,
-    totalCommands INT NOT NULL
+    totalCommands INT NOT NULL,
+    disabledCommands TEXT[]
 );
 
 create TABLE disabledModules(
