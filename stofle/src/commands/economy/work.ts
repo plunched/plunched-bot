@@ -8,7 +8,9 @@ export default class WorkCommand extends Command {
       aliases: ["work"],
       category: "economy",
       description: {
-        content: "Gives you money for you to work",
+        content: "Gives you money in exchange for an hour of work",
+        usage: "work",
+        examples: ["work"],
       },
     });
   }
