@@ -32,6 +32,8 @@ export default class helpCommand extends Command {
         let commandEmbed = new MessageEmbed()
           .setTitle(`Help ${command}`)
           .setColor(this.client.colors.default)
+          .setTimestamp()
+          .setFooter(this.client.user.tag, this.client.user.displayAvatarURL())
           .addField(
             "Usage:",
             `\`${command.description.usage || "No usage provide."}\``
@@ -87,6 +89,11 @@ export default class helpCommand extends Command {
           const embed = new MessageEmbed()
             .setTitle(`help ${category}`)
             .setColor(this.client.colors.default)
+            .setTimestamp()
+            .setFooter(
+              this.client.user.tag,
+              this.client.user.displayAvatarURL()
+            )
             .setDescription(`**Commands:**\n ${commands}`);
           return message.util.send(embed);
         }

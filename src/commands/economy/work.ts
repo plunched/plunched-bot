@@ -16,7 +16,7 @@ export default class WorkCommand extends Command {
   async exec(message: Message): Promise<Message> {
     await pool.query(
       "INSERT INTO users (userID, job) VALUES($1, $2) ON CONFLICT DO NOTHING",
-      [message.author.id, "garbage-collecter"]
+      [message.author.id, "garbage-collector"]
     );
 
     let user = await pool.query("SELECT * FROM users WHERE userID = $1", [
@@ -31,8 +31,8 @@ export default class WorkCommand extends Command {
         return message.util.send("Take the chill pill");
     }
 
-    let randomCoins = 0;
-    if (user.rows[0].job == "garbage-collecter") {
+    let randomCoins: Number = 0;
+    if (user.rows[0].job === "garbage-collector") {
       randomCoins = Math.floor(Math.random() * 300) + 100;
     }
 
@@ -44,7 +44,7 @@ export default class WorkCommand extends Command {
     );
 
     return message.util.send(
-      `You've got ${randomCoins}${this.client.emotes.coin} for you job as \`${user.rows[0].job}\``
+      `You've got **${this.client.emotes.coin}${randomCoins}** for you job as \`${user.rows[0].job}\``
     );
   }
 }
