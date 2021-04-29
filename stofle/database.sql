@@ -1,5 +1,7 @@
 Create DATABASE plunched_bot;
 
+\c plunched_bot
+
 CREATE TABLE guilds(
     guildID BIGINT PRIMARY KEY,
     guildName VARCHAR(255) NOT NULL,
