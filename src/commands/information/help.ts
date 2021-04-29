@@ -73,31 +73,34 @@ export default class helpCommand extends Command {
 
         return message.util.send(commandEmbed);
       } catch (err) {
-        let category = "";
+        try {
+          let category = "";
 
-        this.handler.categories.keyArray().forEach((c) => {
-          if (c == command.toString()) return (category = c);
-        });
+          this.handler.categories.keyArray().forEach((c) => {
+            if (c == command.toString().toLowerCase()) return (category = c);
+          });
 
-        let commands = this.handler
-          .findCategory(category)
-          .keyArray()
-          .map((c) => `\`${c}\``)
-          .join(`, `);
+          let commands = this.handler
+            .findCategory(category)
+            .keyArray()
+            .map((c) => `\`${c}\``)
+            .join(`, `);
 
-        if (category.length > 1) {
-          const embed = new MessageEmbed()
-            .setTitle(`help ${category}`)
-            .setColor(this.client.colors.default)
-            .setTimestamp()
-            .setFooter(
-              this.client.user.tag,
-              this.client.user.displayAvatarURL()
-            )
-            .setDescription(`**Commands:**\n ${commands}`);
-          return message.util.send(embed);
+          if (category.length > 1) {
+            const embed = new MessageEmbed()
+              .setTitle(`help ${category}`)
+              .setColor(this.client.colors.default)
+              .setTimestamp()
+              .setFooter(
+                this.client.user.tag,
+                this.client.user.displayAvatarURL()
+              )
+              .setDescription(`**Commands:**\n ${commands}`);
+            return message.util.send(embed);
+          }
+        } catch (err) {
+          return message.util.send("could not find that category");
         }
-        return message.util.send("could not find that category");
       }
     }
 
