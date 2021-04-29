@@ -10,70 +10,88 @@ export default class helpCommand extends Command {
       category: "information",
       description: {
         content: "Helps you out with any command",
-        usage: "help <command>",
+        usage: "help <command | category>",
         examples: ["links", "help ping"],
       },
       ratelimit: 3,
       args: [
         {
           id: "command",
-          type: Argument.union("command", "lowercase"),
+          type: Argument.union("command", "string"),
         },
       ],
     });
   }
 
-  public exec(
+  public async exec(
     message: Message,
     { command }: { command: Command }
   ): Promise<Message> {
     if (command) {
-      if (this.handler.categories.values())
-        try {
-          let commandEmbed = new MessageEmbed()
-            .setTitle(`Help ${command}`)
-            .setColor(this.client.colors.default)
-            .addField(
-              "Usage:",
-              `\`${command.description.usage || "No usage provide."}\``
-            );
+      try {
+        let commandEmbed = new MessageEmbed()
+          .setTitle(`Help ${command}`)
+          .setColor(this.client.colors.default)
+          .addField(
+            "Usage:",
+            `\`${command.description.usage || "No usage provide."}\``
+          );
 
-          if (command.description.examples) {
-            commandEmbed.addField(
-              "Examples:",
-              `\`${
-                command.description.examples
-                  ? command.description.examples.map((e) => `${e}`).join("\n")
-                  : "no examples provided."
-              }\``
-            );
-          }
-
+        if (command.description.examples) {
           commandEmbed.addField(
-            "Aliases:",
+            "Examples:",
             `\`${
-              command.aliases
-                ? command.aliases.map((e) => `${e}`).join(", ")
+              command.description.examples
+                ? command.description.examples.map((e) => `${e}`).join("\n")
                 : "no examples provided."
             }\``
           );
-
-          if (command.description.Permissions) {
-            commandEmbed.addField(
-              "Permissions:",
-              `${command.description.Permissions}`
-            );
-          }
-
-          commandEmbed.addField(
-            "\u200b",
-            `[support server](https://discord.gg/pDqXpZAVPY) | [add bot](https://discord.com/api/oauth2/authorize?client_id=806242381866205195&permissions=2147483647&scope=bot) | [vote here](https://discordbotlist.com/bots/plunched-bot/upvote)`
-          );
-
-          return message.util.send(commandEmbed);
-        } catch (err) {
-          return message.util.send("could not find that category");
         }
+
+        commandEmbed.addField(
+          "Aliases:",
+          `\`${
+            command.aliases
+              ? command.aliases.map((e) => `${e}`).join(", ")
+              : "no examples provided."
+          }\``
+        );
+
+        if (command.description.Permissions) {
+          commandEmbed.addField(
+            "Permissions:",
+            `${command.description.Permissions}`
+          );
+        }
+
+        commandEmbed.addField(
+          "\u200b",
+          `[support server](https://discord.gg/pDqXpZAVPY) | [add bot](https://discord.com/api/oauth2/authorize?client_id=806242381866205195&permissions=2147483647&scope=bot) | [vote here](https://discordbotlist.com/bots/plunched-bot/upvote)`
+        );
+
+        return message.util.send(commandEmbed);
+      } catch (err) {
+        let category = "";
+
+        this.handler.categories.keyArray().forEach((c) => {
+          if (c == command.toString()) return (category = c);
+        });
+
+        let commands = this.handler
+          .findCategory(category)
+          .keyArray()
+          .map((c) => `\`${c}\``)
+          .join(`, `);
+
+        if (category.length > 1) {
+          const embed = new MessageEmbed()
+            .setTitle(`help ${category}`)
+            .setColor(this.client.colors.default)
+            .setDescription(`**Commands:**\n ${commands}`);
+          return message.util.send(embed);
+        }
+        return message.util.send("could not find that category");
+      }
     }
 
     const embed = new MessageEmbed()
@@ -94,10 +112,8 @@ export default class helpCommand extends Command {
 
       embed.addField(
         category.id,
-        category
-          .filter((cmd) => cmd.aliases.length > 0)
-          .map((cmd) => `\`${cmd}\``)
-          .join(", " || "No commands in category.")
+        `\n**${message.util.parsed.prefix}help \`${category.id}\`**`,
+        true
       );
     }
 
