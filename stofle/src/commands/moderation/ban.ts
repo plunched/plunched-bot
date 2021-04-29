@@ -49,5 +49,7 @@ export default class banCommand extends Command {
       message.author.id !== message.guild.ownerID
     )
       return message.util.send(`This member has a higher role then you!`);
+
+    return message.util.send("Moderation commands are coming soon");
   }
 }

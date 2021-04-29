@@ -4,7 +4,7 @@ import { Message } from "discord.js";
 export default class disableCommand extends Command {
   constructor() {
     super("disable", {
-      aliases: ["disable", "unable"],
+      aliases: ["disable", "prohibit"],
       category: "config",
     });
   }
