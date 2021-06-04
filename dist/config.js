@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.emotes = exports.colors = exports.owners = exports.prefix = exports.token = void 0;
-exports.token = "ODA4MzYwOTk4MDk5NDg0NzIz.YCFa2A.maDtt4N9GVCsWtzD6-xEPNs90d4";
+exports.token = "bot token here";
 exports.prefix = ["p.", "."];
 exports.owners = ["531953738491887627"];
 exports.colors = {
